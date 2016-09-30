@@ -1,0 +1,29 @@
+Liam Beckman
+mon 26 September 2016
+Lab 1
+cs 140u intro to unix/linux
+
+	
+	a. What is the proper subject to be used when submitting email to your instructor?
+
+A properlly formatted subject line includes the class name, the student's name, and the topic of query.
+
+	
+	b. If you are submitting late assignments, where do you find copies of them them and what is the penalty?
+
+We may find copies of late assignments within the approproate dropbox folder (https://online.pcc.edu/d2l/lms/dropbox/user/folders_list.d2l?ou=148609&isprv=0). Late assignemnt s may only be turned in one week after their original due date and are always worth 50% of tehir original value.
+
+	
+	c. What are the lab hours this term for our class?
+
+For both the campus and online classes, the lab hours are 7:00 to 9:00 pm on wednesdsays. 
+
+	
+	d. If you can't login to our Linux system what could be reason?
+
+Inability to login to the Suse linux system at PCC could be a result of misconfigured PuTTY settings (i.e. wrong username or password)
+
+	
+	e. What is the difference between Unix/Linux
+
+Unix is the propritary operating system originally released by AT&T's Bell Laboratories in the early 1970's. Linux is the kernal that grew out of and epanded upon UNIX. When the Linux kernal is integrated with GNU software, it forms a fully fledged operating system known either as GNU/Linux or simply Linux.
