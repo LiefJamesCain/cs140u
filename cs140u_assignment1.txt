@@ -1,0 +1,57 @@
+1) Briefly explain what an Operating System is.
+
+The Linux operating system has many unique and powerful features. Like other
+operating systems, it is a control program for computers. But like UNIX, it is also a
+well-thought-out family of utility programs (Figure 1-1) and a set of tools that
+allow users to connect and use these utilities to build systems and applications.
+
+The Linux kernel—the heart of the Linux operating system—is responsible for allo-
+cating the computer’s resources and scheduling user jobs so each one gets its fair
+share of system resources, including access to the CPU; peripheral devices, such as
+hard disk, DVD, and CD-ROM storage; printers; and tape drives.
+
+2) What does it mean to say, "UNIX is a multi-user Operating System?"
+
+Depending on the hardware and the types of tasks the computer performs, a Linux
+system can support from 1 to more than 1,000 users, each concurrently running a
+different set of programs.
+
+3) What does it mean to say, "UNIX is a multi-tasking Operating System?"
+
+Linux is a fully protected multitasking operating system, allowing each user to run
+more than one job at a time. Processes can communicate with one another but
+remain fully protected from one another, just as the kernel remains protected from
+all processes.
+
+4) What does it mean to say, "UNIX is a portable Operating System?"
+
+A portable operating system is one that can run on many different machines. 
+
+5) Why is UNIX portable?
+
+More than 95 percent of the Linux operating system is written in the C programming lan-
+guage, and C is portable because it is written in a higher-level, machine-independent
+language. (The C compiler is written in C.)
+
+
+6) What are the three major components of any UNIX system (UNIX as an Operating System)?
+
+7) What are the names of the two prominent versions of UNIX, according to our text book?
+
+8) Who (names) of people who designed the original UNIX?
+
+9) What are the two different ways in which a user can interact (interface/work) with UNIX?
+
+10) What is a UNIX account?
+
+11) What is the username of the most powerful account in a UNIX system (the superuser)?
+
+12) What does it mean to "login" to UNIX? What steps do you usually follow for this procedure?
+
+13) What is a Shell?
+
+14) What is a login Shell?
+
+15) What has to be done to change the terminal emulation if it is not correct?
+
+ 
