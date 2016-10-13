@@ -1,5 +1,5 @@
 your name: Liam Beckman
-date: October 12 2016 Tuesday
+date: October 12 2016 Wednesday 
 Lab number: online 
 Answers for week 3
 
@@ -54,6 +54,6 @@ Two commercial versions of UNIX include:
 ---Solaris from Sun Microsystems
 ---macOS (or OS X) from Apple, Inc.
 
-One academic verison of UNIX include:
+One academic verison of UNIX includes:
 ---BSD from University of California, Berekly
 
