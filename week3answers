@@ -1,0 +1,67 @@
+Part I
+
+On the top of all your documents, always include these items:
+
+your name: Liam Beckman
+date: October 10 2016 Monday
+Lab number: 
+Answers for week 3
+
+
+    What are the names of the parts of a UNIX command? List them, and give a brief description of each.
+    Can multiple UNIX commands be typed on the same single command line? Explain how.
+
+A generic UNIX command is structured as PROMPT NameOfCommand [options/arguments] [< fileInput] [> fileOutput]. The PROMPT is the terminal's way of saying it is ready for input from the user. 
+---Examples of the PROMPT include "%" (typically used for tcsh and Zsh shells) and "$" (typically used for Bash). 
+---The NameofCommand is whatever command the user wishes to execute.
+---[options/arguments] represents whatever parameters the user wishes to include with their command.
+---[< fileInput] represents the files that are (optionally) included with the command. The default input is typically the keyboard.
+---[> fileOutput] represents the files that are (again, optionally) used for storing the results of the command. The default output is typically the computer screen.
+
+If the user wishes to combine multiple commands in one, they are in luck. The magic of UNIX allows for commands to be "strung" together with the help of the pipe "|". For example, if one wished to go to their home directory, then list directories, and finally search for a specfifc string (like "the holy grail"), they could enter the command:
+
+cd ~ | ls | grep 'the\|holy\|grail'
+ 
+
+
+
+    Write names of the main hardware components of a contemporary computer system.
+
+Modern computer systems almost always include a central processor unit, a graphics and sound cards, memory (primrary storage), a hard drive (secondary storage), a motherboard, a keyboard, a monitor, and a power supply. 
+
+
+
+    What system was the immediate predecessor of UNIX? Where was this predecessor and UNIX itself initially developed, and by whom?
+
+UNIX grew out of the Multics system belonging to General Electric, MIT, and Bell Labs. The Multics operating system was n active development on the GE-645 by Dennis Ritchie, Ken Thompson, J.F. Ossanna, M.D. McIlroy, and various other researchers. Ken Thompson spearheaded the original composition of UNIX, and later worked with Dennis Ritchie to create the UNIX system in the C language. 
+
+
+
+    Where did the three main branches of UNIX development take birth? Name two systems from the commercial branch and one from the academic branch of UNIX development.
+
+
+n 1972, Unix was rewritten ines of UNIX include System V, BSD UNIX, and Open Systems.
+---System V started at AT&T's Unix System Laboratories in 1983 with the publication of System V Release 1 (or SVR1). Later in 1989, BSD and System V would be integrated in a combined effort between AT&T and Sun Microsystems. This new system was named SVR4.
+
+---BSD UNIX's was first preceded by a software release (1BSD) that took place in 1977 at the University of California, Berekley, composed only of the ed text editor and an orginal Pascal compiler. The first iteration of BSD UNIX itself was developed and released in 1981 as 4.1BSD.
+
+---Open Systems originated out of an effort to keep UNIX development in the hands of an open-source community and out of the hands of a single company such as AT&T. The Open System Foundation wrote and freely distributed OSF/1 in 1991. 
+
+
+Two commercial versions of UNIX include:
+---Solaris from Sun Microsystems
+---macOS (or OS X) from Apple, Inc.
+
+One academic verison of UNIX include:
+---BSD from University of California, Berekly
+
+
+
+    Save the answers in your unix system in a file called week3answers  Email your answers as an attachment (actually redirecting file), using the method below to wmorales@syccuxas01.pcc.edu.
+
+You will have to use the text editor called vi in order to get this activity done. This might be a little tricky since you may not have practice vi yet. You can review the vi section in your book or online before doing this activity. You will only need to know the basic navigation features and how to start and save a file. Once this file is saved in your home directory you will need to type the command below to send the file to the instructor. At the shell prompt, type: (you will not get a feedback when the message is sent. You should send the message to yourself first and see if it worked, then send it to your instructor). You can use the email program called pine after using the command below, to check if you  have new email. If it worked for you, then you can just send it again, sending it to me.
+
+mail -s "CS140U online - Answers for week 3 - Your name" wmorales@syccuxas01.pcc.edu < week3answers
+
+NOTE: when you create a file name do not use spaces for the name ie. the file could be called week_3, but not "week 3" that would create 2 files, one called week, and the other 3.
+

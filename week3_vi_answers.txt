@@ -1,0 +1,20 @@
+your name: Liam Beckman
+date: October 12 2016 Wednesday
+Lab number: online
+Answers for week 3
+
+
+What do the following 8 vi commands do? 
+
+12dw -- deletes the 12 words from the cursor onward.
+5dd -- deletes the 5 lines from the cursor
+12o -- adds 12 lines following the cursos and enter INSERT mode
+5O -- adds 5 lines preceding the cursor and enter INSERT mode
+c5b -- deletes the 5 words precding the cursos and enter INSERT mode
+:5,12d -- go to the 5th line and delete the 12 lines following the cursor.
+12G -- go to the 12th line
+5yy -- "yanks" or copies the 5 lines following the cursor.
+
+You can call this file week3_vi_answers.txt
+
+ 
