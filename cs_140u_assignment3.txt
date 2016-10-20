@@ -1,0 +1,66 @@
+liam beckman
+10/19/16
+cs140u assignment 3
+online
+
+Log on to your UNIX system
+
+1. Give three different commands to get back to your home directory.
+$ cd  
+$ cd ~
+$ cd /home/students/liam.beckman/
+
+2. Show the names of all hidden files in your home directory. Show your session.
+
+$ cd -a
+
+3. Write down the following and show the session that you used to obtain the required information:
+
+
+Your user name (also known as login name)
+Your user ID
+Your group ID and group name
+User names of users in your group
+Number of groups that you are a member of
+ 
+liam.beckman
+
+
+
+4. What are the permissions for your home directory set by your system administrator? What command did you use to answer the question? Show your session.
+user ---- 
+group --- 
+others -- 
+$ cd -l
+
+5. Suppose that you want to block everyone (except you) at the main door (your ~ direcotry) of your directory hierarchy (i.e., your home directory-not the files inside the directory), as shown in Figure Lab7.1 (below). Take the necessary steps to do this. Show the session that you used to accomplish the task and confirm that the task has actually been done.
+
+
+6. What do . (dot), .. (dotdot), and ~ represent in UNIX? Show use of all three.
+.  ---- current directory
+.. ---- parent directory
+~  ---- home directory
+
+7. What is an inode number in UNIX? Show the command for displaying the inode numbers for the root directory and your home directory.
+
+
+8. Give the command for removing an empty directory called personal under your home directory. How would you remove it if the personal directory is not empty?
+
+rm home.students/liam.beckman/personal
+rm -r home.students/liam.beckman/personal 			(recursive)
+
+9. Create a file, called sample, in your home directory and set its permissions to read and write for yourself, read for users in your group, and none to everyone else. What command did you use to create the file? What command did you use to set privileges?
+$ touch sample
+$ chmod 640
+
+10. Suppose that umask is set to 022 on a system. What will be the default permissions for the new directories and text files that you create? Explain your answer.
+umask 022 is the opposite of chmod 755. As such, the following permissions will apply to new directories and files: 124 xwr
+user ---- rwx
+group --- rx
+others -- rx
+
+
+11. Assume that you have two files, f1 and f2, that you want to concatenate and store in a file called f1nf2. Show the cat command needed to perform this task. Now show the cat command needed to put your name, taken from the keyboard, as the last line of f1nf2.
+$ cat f1 > f1nf2 
+$ cat f2 > f1nf2
+$ echo liam | cat > f1nf2

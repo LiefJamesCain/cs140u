@@ -1,0 +1,60 @@
+The three branches of UNIX include System V, BSD UNIX, and Open Systems.
+---System V started at AT&T's Unix System Laboratories in 1983 with the publication of System V Release 1 (or SVR1). Later in 1989, BSD and System V would be integrated in a combined effort between AT&T and Sun Microsystems. This new system was named SVR4.
+
+---BSD UNIX's was first preceded by a software release (1BSD) that took place in 1977 at the University of California, Berekley, composed only of the ed text editor and an orginal Pascal compiler. The first iteration of BSD UNIX itself was developed and released in 1981 as 4.1BSD.
+
+---Open Systems originated out of an effort to keep UNIX development in the hands of an open-source community and out of the hands of a single company such as AT&T. The Open System Foundation wrote and freely distributed OSF/1 in 1991. 
+
+
+Two commercial versions of UNIX include:
+---Solaris from Sun Microsystems
+---macOS (or OS X) from Apple, Inc.
+
+One academic verison of UNIX include:
+---BSD from University of California, Berekly
+
+Initially intended for use inside the Bell System, AT&T licensed Unix to outside parties from the late 1970s, leading to a variety of both academic and commercial variants of Unix from vendors such as the University of California, Berkeley (BSD), Microsoft (Xenix), IBM (AIX) and Sun Microsystems (Solaris). AT&T finally sold its rights in Unix to Novell in the early 1990s, which then sold its Unix business to the Santa Cruz Operation (SCO) in 1995,[4] but the UNIX trademark passed to the industry standards consortium The Open Group, which allows the use of the mark for certified operating systems compliant with the Single UNIX Specification (SUS). Among these is Apple's macOS,[5] which is the Unix version with the largest installed base as of 2014.
+
+The different versions of Unix fall into the following three branches, described in more detail below:
+
+    System V
+    BSD Unix
+    Open Systems
+
+System V. In the late 1970's, a few companies started to develop products based on the AT&T Unix code. In 1979, AT&T announced that they intended to commercialize Unix themselves, and established Unix System Laboratories (USL) to develop a supportable product. In 1983, USL published the first release of the new commercial baseline, called System V Release 1 (SVR1).
+
+In 1982, AT&T agreed to terms for a consent decree with the US Government that ended their monopoly control over telephone access, but also allowed them to get into the computer business, so they began to market Unix on a commercial scale. USL released SVR2 in 1984, and SVR3 in 1987, which they sold on their own computers, as well as licensed to other vendors who customized and then resold it with their own hardware.
+
+In 1987, AT&T entered an alliance to develop a standard Unix version with Sun Microsystems, the leading vendor of the BSD Unix variant. In 1989, USL released SVR4, which integrated the System V and BSD Unix baselines.
+
+The AT&T alliance with Sun alarmed many of the other Unix vendors, who then formed the Open System Foundation as described below. AT&T then established a rival group called Unix International. However, despite considerable effort, AT&T didn't have much success in the computer marketplace, and they finally sold their Unix business to Novell in 1993. Novell then handed over the Unix trademark and System V source code to the X/Open group. In December, 1993, Novell released the last System V Unix, a multiprocessor version called SVR4.2MP.
+
+In 1996, the Santa Cruz Operation (SCO) bought the Unix business from Novell in order to integrate System V with their leading Unix version for the Intel personal computer. SCO, and maintained the System V baseline for several years until making it available for free.
+
+
+BSD Unix. In November, 1973, Ken Thompson and Dennis Ritchie presented a paper on Unix at the Symposium on Operating System Principles at Purdue University, where Bob Fabry from the University of California at Berkeley (UCB) heard about the work. Fabry requested a copy of the system, received Unix edition 4 in January, 1974, and a group of UCB computer scientists and mathematicians began working with the system.
+
+In 1975, graduate students Bill Joy and Chuck Haley started working with the Unix system. They wrote a line editor called ex and a Pascal language compiler for the system, which Joy released in 1977 as the first Berkeley Software Distribution (1BSD). Joy released 2BSD in 1978, which updated the Pascal compiler and included two utilities he had written -- a full screen wysiwyg text editor called vi, and a terminal interfacing interpreter called termcap.
+
+In 1979, DARPA decided to consolidate on one operating system to reduce the cost of supporting different systems at their various sites, and to provide a common foundation to enable sharing of software. They selected Unix to be the standard, among other reasons because it was easily portable between different hardware computer systems. In the fall of 1979, Fabry made a proposal to DARPA to build a Unix version for DoD based on the forthcoming 3BSD release.
+
+In 1980, DARPA awarded a contract to UCB to create a DoD version of Unix. Fabry then set up an organization called the Computer Systems Research Group (CSRG), with Joy as project leader, to work on what would become BSD Unix. The first version was called 4.1BSD, and released in 1981. The CSRG continued on to integrate many new capabilities into Unix, such as networking, virtual memory, and a fast file system. The 4.2BSD release in 1984 included TCP/IP networking, and the 4.3BSD release in 1986 included a Domain Name Server, expanding the number of sites able to implement Internet networking. The final release was 4.4BSD in 1993.
+
+Up until 1988, use of BSD Unix required an AT&T license, since each release included AT&T source code. However, the licenses began to increase in cost, the mechanism was inconvenient, and some vendors only wanted the BSD originated components. Therefore, in June, 1989, UCB published Networking Release 1 containing their TCP/IP networking system for the first time without any AT&T code, and released under an open license that allowed free source code modification and distribution.
+
+In one of the first major efforts at open system distributed development, Keith Bostic then led an initiative to get people to rewrite the hundreds of AT&T utilities from open specifications. By the end of 1991, a completely new Unix had been developed that didn't include any AT&T code, which was then released as Networking Release 2 under the same open license.
+
+In 1991, a group of former CSRG members established a company called BSDI to market a commercial version of Unix based on Networking Release 2. AT&T then sued BSDI and UCB for disclosing trade secrets and infringing copyrights. UCB then counter-sued AT&T for not acknowledging the source of a lot of UCB code in the System V baseline. Finally a settlement was reached which required some minor code-tweaking to the BSD source, which was then released as 4.4BSD-Lite under UCB's open software license. This version was then used as the baseline for development of several other free software versions, including FreeBSD, NetBSD, and OpenBSD.
+
+
+Open systems. By 1982, the minicomputer industry was beginning to grow. Several computer companies began to develop commercial versions of Unix, some based on System V, and some on BSD Unix. Each vendor differentiated their system by adding unique features, but also recognized that they had a common interest in preventing AT&T from monopolizing the market. Several efforts were made in the in 1980's to develop open Unix specifications and standards, such as by the IEEE POSIX group and a European group of companies called X/Open, with some limited success.
+
+In 1988, in response to AT&T's alliance with Sun described above, several vendors formed a group called the Open System Foundation to develop a new Unix operating system from open specifications and end their dependence on the AT&T code. The OSF/1 system was released in 1991, but it wasn't as mature as the established systems, so there was only slow adoption some of its components by AT&T's biggest competitors like DEC and IBM.
+
+In 1993, a lot of the fight went out of the Unix wars when AT&T left the computer business and sold System V to Novell, who then assigned the rights to Unix to X/Open. In 1996, OSF and X/Open merged into The Open Group, which still promotes open system standards today.
+
+In the late 1990's, interest began to coalesce around Linux, the first really open Unix system released under the free software GNU license, and which might finally unify the Unix family after three decades of development.
+
+
+
+

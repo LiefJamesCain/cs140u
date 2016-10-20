@@ -1,0 +1,198 @@
+Liam Beckman
+16 October 2016 Sunday
+cs 140u intro to unix/linux ONLINE
+ASSIGNMENT 2
+
+  
+
+1. What vi command allows you to move to the first line in the current buffer (document), not first line of the current page?
+
+Both the 1G or gg command moves the cursor to the first line in the buffer. 
+
+
+
+2. What command allows you to move to the last line in the buffer(document), not the last line of the current page?
+
+The G command moves the cursos to the last line in the buffer.
+
+
+
+3. What file in your home directory allows you to customize your vi environmentvariables permanently?
+
+Typically, one may store their configs in the vim startup file (.vimrc) which will be located in the user's home directory.
+
+
+
+4. List the properly named parts of a valid e-mail address, briefly describe each one, and then give 3 examples of complete e-mail addresses. username@hostname.domain_name... ,
+
+The username ----- the unique identifier assigned to a particular owner of the e-mail addreess.
+The hostname ----- the identifier for whomever oowns the actual server that the e-mail messages operate from.
+The domain name -- the top level domain associated with the hostname (i.e. .com, .org, .net, etc.).
+
+EXAMPLES:
+liam.beckman@pcc.edu
+lbeckman314@gmail.com
+lbeckman@uoregon.edu
+
+
+
+5. What are the two general modes of operations you can perform in vi?
+
+The two general modes of vi operation are INSERT and COMMAND
+
+
+
+6. Briefly describe what the SMTP standard protocol format for an e-mail message is.
+
+The SMTP prvoides a set of standardized guildlines by which e-mail messages are sent, recived, and stored. Short for Simple Mail Transfer Protocol, SMTP is based around commands by which senders and recipients may coordinate their transmissions:
+---MAIL, which specifies the return address of the sender;
+---RCPT, which specifies the address of the recipient;
+---DATA, which specifies the beginning of the data transmission, or rather the e-mail message itself. 
+
+
+7. Briefly describe the difference between the POP and IMAP e-mail protocols.
+
+POP (Post Office Protocol) and IMAP (Internet Messaging Access Protocol) each provide two very different ways to access and manage one's e-mail correspondence. The largest differences include:
+
+with POP, e-mails are first downloaded from an e-mail server, then stored on one's local machine, and finally deleted from the server. This prevents reading messages from any other computer. Thus, e-mails may be acessbile later without a guranteed internet connection.
+
+with IMAP, e-mails are stored on a dedicated server system that allows one to access them from any device with an internet connection. However, e-mails are not necessarily availble with that connection.
+
+
+
+8. What does the MIME attachment standard for e-mail deal with?
+
+MIME (or Multipurpose Internet Mail Extensions) allows for a broader range of text and media to be included within an e-mail message. Such text and media may include JPEG, GIF, or MPEG attachments, as well as multi-part headers and message bodies.
+
+
+
+9. List and briefly describe some common functions found in UNIX e-mail systems.
+
+A standard UNIX e-mail system consists of a user agent that provides a user-interface (either GUI or CLI) that allows the user to access their inbound messages as well as write their outbound messages.
+
+The user agent either sends (in the case of outbound messages) or receives (in the case of inbound messages) this information to the transport agent, a program that itself sends and receives messages to the transport agent of another computer. In this fashion, UNIX users may exhange messages in a somewhat symmetrical manner.   
+
+A typical CLI e-mail command may resemble the following:
+$ echo "MESSAGE" | mail -s "SUBJECT" USERNAME@HOSTNAME.DOMAIN
+
+skip to main content
+My Home 
+CS-140U-0-40986 - Intro to UNIX/LinuxSelect a course... 
+Message alerts - You have new alerts
+ 
+Update alerts - You have new alerts
+ 
+Subscription alerts
+ 
+ Liam Beckman
+Navigation
+Course Home
+  
+Content
+  
+Calendar
+  
+Discussions
+  
+Assignments
+  
+Quizzes
+  
+Classlist
+  
+Grades
+  
+Online Rooms
+  
+Chat
+  
+Surveys
+Submit Files - Assignment 2
+Hide Submission Folder Information
+Submission Folder
+ 
+Assignment 2
+Instructions
+ 
+CS140U - 50 pts DUE: Announced in Discussion board and online calendar Assignment 2
+
+Due Date: Check the online calendar / Discussion board
+
+50 Points
+
+Copy and paste the questions and your answers in the body of your text file.  You do not need to use vi, but it would be ideal if you do a couple of assignments using vi for practice. Please be complete with your answers.
+
+Each question has its own point system. For instance, if an assignment has 10 questions and it is worth 50 points, each question will be worth 5 points, etc.
+
+When I correct your assignments, there will be series of *** in front of an answer, indicating that the answer is either incomplete or complete wrong. The points will be deducted accordingly. -1 for very minor error, 3 or more for major errors. The key for the assignments will be found under Content-assignment/lab answers.
+
+Make sure to submit all of your assignments in the dropbox.
+
+Always include the assignment questions (except assignments 6, 7), otherwise 10 pts will be deducted. Also, attach ONLY  .txt files, NO Word or PDF files.
+
+CS 140U
+
+ 
+
+ 
+
+1. What vi command allows you to move to the first line in the current buffer (document), not first line of the current page?
+
+ 
+
+2. What command allows you to move to the last line in the buffer(document), not the last line of the current page?
+
+ 
+
+3. What file in your home directory allows you to customize your vi environment
+
+variables permanently?
+
+4. List the properly named parts of a valid e-mail address, briefly describe
+
+each one, and then give 3 examples of complete e-mail addresses.
+
+username@hostname.domain_name... ,
+
+5. What are the two general modes of operations you can perform in vi?
+
+6. Briefly describe what the SMTP standard protocol format for an e-mail message is.
+
+7. Briefly describe the difference between the POP and IMAP e-mail protocols.
+
+8. What does the MIME attachment standard for e-mail deal with?
+
+9. List and briefly describe some common functions found in UNIX e-mail systems.
+
+ 
+
+ 
+
+ 
+
+ 
+
+Start Date
+ 
+Oct 7, 2016 11:07 PM
+End Date
+ 
+Oct 16, 2016 11:59 PM
+Submit Files
+
+Files to submit
+ 
+(0) file(s) to submit
+
+After uploading, you must click Submit to complete the submission.
+Add a FileRecord AudioRecord Video	
+Comments
+ 
+Skip Toolbars for Comments.
+
+More Insert actions. 
+
+Show All Components
+
+
+SubmitCancel

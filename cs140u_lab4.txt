@@ -1,0 +1,120 @@
+Name: Liam Beckman
+Lab partner : Suranjana Rangarajan suranjana.rangarajan
+Date: 19 October 2016 wednesday
+Lab number 4
+
+
+----------------------------------------------------------
+----------------------------------------------------------
+
+
+User B's Procedure (Suranjana R)
+
+In order to RECEIVE a hard link, one must:
+
+
+1) Log in to the Unix system and confirm the working directory
+    using the following command at the shell prompt:
+    $ pwd
+    When logged in, each user is placed in his/her home directory by
+    default which is /home/student/UserB or ~/B
+
+2) Display permission settings for the user directory ( which is the current working directory)
+    using command ls with options l (long) and d (directory).
+    
+    $ ls -ld /home/student/UserB  OR  ls -ld 
+    
+    The default permission string looks like drwx------ which means only the owner
+    has all permissions ,other's and group have none.
+
+3) Change permissions for the user directory to allow read and write access by other users (User A)
+    or all (a) users
+
+    $ chmod a+rwx /home/student/UserB
+
+    We can confirm the permissions change by using the ls command with -ld option as done before
+     The permissions will become drwxrwxrwx            
+  
+4) Create a new directory for lab4 in /home/student/UserB using command
+
+     $ mkdir lab4
+     so the absolute pathname for lab4 directory is /home/student/UserB/lab4
+     or ~/lab4
+
+5) Display access permissions for the newly created directory and
+    modify if necessary to give read and write access for other users (o)
+    or all (a) users which includes owner(u), group(g),other users(o)
+
+    $ ls -ld /home/student/UserB/lab4       (ls command is used with both the long option l and directory option d)
+     
+    The default permission string will usually give no access to other
+    users and group while the owner has all access permissions (r,w,x) (drwx------)
+
+6) Change permissions for other users(o) or all users (a) using the
+     following command:
+
+     $ chmod a+rwx /home/student/UserB/lab4
+     
+     The new permissions will be drwxrwxrwx
+     Lab4 is a directory file,not a program file and here the execute bit x
+     just grants read access like r does.
+
+7) Confirm changes in permission settings using command
+
+    ls -ld ~/lab4
+    
+    The owner,group and other users should have drwxrwxrwx.
+
+
+----------------------------------------------------------
+----------------------------------------------------------
+
+
+User A's Procedure (Liam Beckman)
+
+In order to SEND a hard link, one must:
+
+
+1) Confirm working directory upon logging in
+
+   $ pwd            (/home/student/liam.beckman/)
+
+2) create a new directory called temp
+     
+    $ mkdir temp    (/home/student/liam.beckman/temp)
+
+3) Create a file called data.txt
+     
+    $ touch data.txt
+
+4) Set file access permissions for all (a) users
+     
+    $ chmod a+rw data.txt
+
+5) Move the file to temp directory        
+
+    $ mv data.txt /home/student/UserB/temp
+
+6) Create hard link to data.txt in UserB's directory
+
+    $ ln data.txt /home/student/UserB/lab4/data_2.txt
+
+7) Verify hard link 
+    
+    $ ls -l /home/student/UserB/lab4/data.txt
+
+    Number of hardlinks should increase by 1
+
+8) When User B accesses his/her lab4 directory (/home/student/suranjana.rangarajan/lab4)
+     and uses ls command the linked file will be seen (shows up in green) and User B can display the contents 
+     of linked file using cat command.
+
+    $ cat data_2.txt
+
+    ls -l command will display a line of information containing the permission string,owner of file, number of hard links
+    date & time it was last modified.
+
+
+
+
+
