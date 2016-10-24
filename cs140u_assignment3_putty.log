@@ -1,0 +1,489 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2016.10.20 16:50:19 =~=~=~=~=~=~=~=~=~=~=~=
+login as: liam.beckman
+Using keyboard-interactive authentication.
+Password: 
+Last failed login: Tue Oct 18 18:56:44 PDT 2016 from 50.45.240.233 on ssh:notty
+There were 3 failed login attempts since the last successful login.
+Last login: Tue Oct 18 18:55:42 2016 from 50.45.240.233
+
+liam.beckman@syccuxas01:~> cd /
+liam.beckman@syccuxas01:/> cd /home/students/liam.beckman
+-bash: cd: /home/students/liam.beckman: No such file or directory
+liam.beckman@syccuxas01:/> cd /home/students/liam.beckman/
+-bash: cd: /home/students/liam.beckman/: No such file or directory
+liam.beckman@syccuxas01:/> cd /home/students/liam.beckman/home/students/liam.beckman/
+-bash: cd: home/students/liam.beckman/: No such file or directory
+liam.beckman@syccuxas01:/> cd home/students/liam.beckman/pwd
+/
+liam.beckman@syccuxas01:/> cd
+liam.beckman@syccuxas01:~> pwd
+/home/student/liam.beckman
+liam.beckman@syccuxas01:~> pwdpwdcdpwdcd /homes/dtstudent/liam.beckman
+liam.beckman@syccuxas01:~> cd -a
+-bash: cd: -a: invalid option
+cd: usage: cd [-L|[-P [-e]]] [dir]
+liam.beckman@syccuxas01:~> ls -a
+.              bin       Documents   .inputrc  newfile      .viminfo
+..             .config   .emacs      lab4      .profile     .xim.template
+.bash_history  cs140u    .fonts      .local    public_html  .xinitrc.template
+.bashrc        data.txt  .gnu-emacs  mbox      temp
+liam.beckman@syccuxas01:~> ls -a | grep .
+.
+..
+.bash_history
+.bashrc
+bin
+.config
+cs140u
+data.txt
+Documents
+.emacs
+.fonts
+.gnu-emacs
+.inputrc
+lab4
+.local
+mbox
+newfile
+.profile
+public_html
+temp
+.viminfo
+.xim.template
+.xinitrc.template
+liam.beckman@syccuxas01:~> clear
+liam.beckman@syccuxas01:~> ls -ld .?*
+drwxr-xr-x 2196 root         root     53248 Oct 15 09:05 ..
+-rw-------    1 liam.beckman students  6647 Oct 18 18:55 .bash_history
+-rw-r--r--    1 liam.beckman students  1177 Oct 10  2014 .bashrc
+drwx------    2 liam.beckman students  4096 Sep 27  2013 .config
+-rw-r--r--    1 liam.beckman students  1637 Sep 12  2014 .emacs
+drwxr-xr-x    2 liam.beckman students  4096 Sep 27  2013 .fonts
+-rw-r--r--    1 liam.beckman students 18517 Nov 12  2014 .gnu-emacs
+-rw-r--r--    1 liam.beckman students   861 Sep 12  2014 .inputrc
+drwx------    3 liam.beckman students  4096 Sep 26 17:29 .local
+-rw-r--r--    1 liam.beckman students  1028 Oct 10  2014 .profile
+-rw-------    1 liam.beckman students  5456 Oct 18 11:29 .viminfo
+-rw-r--r--    1 liam.beckman students  1940 Dec 16  2013 .xim.template
+-rwxr-xr-x    1 liam.beckman students  1112 Sep 27  2013 .xinitrc.template
+liam.beckman@syccuxas01:~> ls 0d-d .!(|.)
+.bash_history  .config  .fonts      .inputrc  .profile  .xim.template
+.bashrc        .emacs   .gnu-emacs  .local    .viminfo  .xinitrc.template
+liam.beckman@syccuxas01:~> ls -d .!(|.)l
+-rw------- 1 liam.beckman students  6647 Oct 18 18:55 .bash_history
+-rw-r--r-- 1 liam.beckman students  1177 Oct 10  2014 .bashrc
+drwx------ 2 liam.beckman students  4096 Sep 27  2013 .config
+-rw-r--r-- 1 liam.beckman students  1637 Sep 12  2014 .emacs
+drwxr-xr-x 2 liam.beckman students  4096 Sep 27  2013 .fonts
+-rw-r--r-- 1 liam.beckman students 18517 Nov 12  2014 .gnu-emacs
+-rw-r--r-- 1 liam.beckman students   861 Sep 12  2014 .inputrc
+drwx------ 3 liam.beckman students  4096 Sep 26 17:29 .local
+-rw-r--r-- 1 liam.beckman students  1028 Oct 10  2014 .profile
+-rw------- 1 liam.beckman students  5456 Oct 18 11:29 .viminfo
+-rw-r--r-- 1 liam.beckman students  1940 Dec 16  2013 .xim.template
+-rwxr-xr-x 1 liam.beckman students  1112 Sep 27  2013 .xinitrc.template
+liam.beckman@syccuxas01:~> whoami
+liam.beckman
+liam.beckman@syccuxas01:~> id -u liam.nebeckman
+4881
+liam.beckman@syccuxas01:~> cat /etc/group
+at:x:25:
+audio:x:17:
+avahi:x:491:
+avahi-autoipd:x:499:
+bin:x:1:daemon
+cdrom:x:20:
+colord:x:488:
+console:x:21:
+daemon:x:2:
+dialout:x:16:
+disk:x:6:
+floppy:x:19:
+ftp:x:49:
+games:x:40:
+gdm:x:485:
+kmem:x:9:
+lock:x:54:
+lp:x:7:
+mail:x:12:postfix
+maildrop:x:59:postfix
+man:x:62:
+messagebus:x:495:
+modem:x:43:
+news:x:13:
+nginx:x:481:
+nobody:x:65533:
+nogroup:x:65534:nobody
+nscd:x:493:
+ntadmin:x:71:
+ntp:x:498:
+polkitd:x:490:
+postfix:x:51:
+public:x:32:
+pulse:x:487:
+pulse-access:x:486:
+root:x:0:
+rtkit:x:489:
+scard:x:484:
+shadow:x:15:
+sshd:x:494:
+svn:x:482:
+sys:x:3:
+systemd-journal:x:497:
+tape:x:496:
+tftp:x:492:dnsmasq,tftp
+trusted:x:42:
+tty:x:5:
+utmp:x:22:
+uucp:x:14:
+video:x:33:gdm
+vscan:x:483:
+wheel:x:10:kgullber
+www:x:8:
+xok:x:41:
+F15-40277:x:1002:alexander.davis1,ben.portis,ben.stewart2,brennen.cramer,christopher.bennett,christy.felty,doug.jones,edward.wisniewski,evan.watson2,gabrielle.goneaubash,ian.gore,james.shumaker15,jeffrey.munson1,jennifer.thompson13,jeremiah.bennett,john.mayer2,john.robertson4,julian.kaufman,michaelangelo.owildeberry,ngon.phan,nicholas.pettit,nick.walker,orion.asker,paul.hubbard,sam.davey,stephen.haise,tyler.mcdonnell
+clamav:x:1001:vscan
+instructors:x:1000:cgoble,djones,dmandel,gd.iyer,ggross,glen.sasek,jabramso,jblack,jbockelm,kavita.nautiyal,kimberly.janik,lliang,michael.ross2,michael.trigoboff,mike.noel,mtrigobo,ralph.carpenter,robert.martin4,wmorales
+students:x:1003:aaron.brown14,aaron.fifer,aaron.herinckx,aaron.leondar,aaron.miller5,aaron.squier,abdallah.nawras,abdel.ouedraogo,abdi.sharif1,abdikadir.musa,abdoul.ouedraogo,abdulhai.mohammednur,abdullah.alshawa,abdullah.barghouti,abdullah.luay,abdulrahman.adnan,abie.jones,adaclarissa.chavez,adam.craig,adam.davis,adam.hogen,adam.kowalski,adam.lafleur,adam.meier1,adam.odeh,adhyavu.dessou,adrian.brown2,adrian.ledesma,adrian.smith2,adriana.hall,ahkil.jackson,ahmed.elnaser,ahmed.qadri,ahmeddayib.abdi,aidan.hankins,aidan.hazzard,aidan.reidel,aj.mallison,aj.stacher,alana.gilston,alaric.bartlett15,albert.farmer,albert.jonathan,alberto.morales2,aleasha.green,alec.deschene,alec.diefenbaugh,alec.meichtry,alejandra.dominguez,alejandro.contreras1,alex.calixtro,alex.graalum,alex.narayan,alex.novac,alex.peterson,alex.ruhland,alexa.bell,alexander.davis1,alexander.davis5,alexander.macleay,alexander.moretz,alexander.rose,alexander.ryan,alexander.vazquez,alexander.westerfield,alexander.yegorov,alexandra.davis2,alexis.sandoval,alexis.vidal2,ali.alkarbi,ali.almishalawee,ali.bulbul,ali.karimyar,ali.nemati,ali.saad1,alina.rodriguez,alina.rudnitskaya,alison.ryan2,allan.roberts,allison.luthykaplan,alseny.diallo,alwyn.lewis,alysha.recore,amanda.greer1,amanda.murphy1,amanda.voegtlin,amandah.brown,amariah.jordan,amen.mengistu,amina.foster,amy.baxter,an.huynh1,andre.smithjohannsen15,andrea.martin5,andres.hernandezgalvan,andrew.bailey,andrew.baumgart,andrew.dall,andrew.denzer,andrew.dimuzio,andrew.doser,andrew.fong,andrew.haley,andrew.jorgenson,andrew.kalik,andrew.kerner,andrew.niven,andrew.sadowski,andrew.snow,andrew.wiley,andrew.wong3,andy.grill,andy.keene1,andy.le1,andy.stewart,andy.trevino,andy.turner,anh.nguyen46,ani.pogula,anna.koch2,anthony.do,anthony.frisonpeters,anthony.galassi,anthony.hayden,anthony.molgaard,anthony.napoleon,anthony.pearce,anthony.smith13,antonio.solorio,antony.mau,april.pickett,arash.sobhani,aria.klucewicz,arild.valderhaug,armin.yazdani,arnob.das,aron.wesley,artem.newell,arthur.lang,asako.takahashi,ashley.newcomb,ashley.powell,ashlynn.crisp,ashten.bontrager,audrey.giesbers,augusto.delvalle,austin.higley
+users:x:100:dmandel,gd.iyer,ggross,glen.sasek,jabramso,jblack,jbockelm,jesse.black,kimberly.janik,lliang,michael.ross2,michael.trigoboff,mike.noel,mtrigobo,ralph.carpenter,robert.martin4,wmorales
+liam.beckman@syccuxas01:~> groups
+students
+liam.beckman@syccuxas01:~> groupscat /etc/groupid -u liam.beckman
+4881
+liam.beckman@syccuxas01:~> getent group
+at:x:25:
+audio:x:17:
+avahi:x:491:
+avahi-autoipd:x:499:
+bin:x:1:daemon
+cdrom:x:20:
+colord:x:488:
+console:x:21:
+daemon:x:2:
+dialout:x:16:
+disk:x:6:
+floppy:x:19:
+ftp:x:49:
+games:x:40:
+gdm:x:485:
+kmem:x:9:
+lock:x:54:
+lp:x:7:
+mail:x:12:postfix
+maildrop:x:59:postfix
+man:x:62:
+messagebus:x:495:
+modem:x:43:
+news:x:13:
+nginx:x:481:
+nobody:x:65533:
+nogroup:x:65534:nobody
+nscd:x:493:
+ntadmin:x:71:
+ntp:x:498:
+polkitd:x:490:
+postfix:x:51:
+public:x:32:
+pulse:x:487:
+pulse-access:x:486:
+root:x:0:
+rtkit:x:489:
+scard:x:484:
+shadow:x:15:
+sshd:x:494:
+svn:x:482:
+sys:x:3:
+systemd-journal:x:497:
+tape:x:496:
+tftp:x:492:dnsmasq,tftp
+trusted:x:42:
+tty:x:5:
+utmp:x:22:
+uucp:x:14:
+video:x:33:gdm
+vscan:x:483:
+wheel:x:10:kgullber
+www:x:8:
+xok:x:41:
+F15-40277:x:1002:alexander.davis1,ben.portis,ben.stewart2,brennen.cramer,christopher.bennett,christy.felty,doug.jones,edward.wisniewski,evan.watson2,gabrielle.goneaubash,ian.gore,james.shumaker15,jeffrey.munson1,jennifer.thompson13,jeremiah.bennett,john.mayer2,john.robertson4,julian.kaufman,michaelangelo.owildeberry,ngon.phan,nicholas.pettit,nick.walker,orion.asker,paul.hubbard,sam.davey,stephen.haise,tyler.mcdonnell
+clamav:x:1001:vscan
+instructors:x:1000:cgoble,djones,dmandel,gd.iyer,ggross,glen.sasek,jabramso,jblack,jbockelm,kavita.nautiyal,kimberly.janik,lliang,michael.ross2,michael.trigoboff,mike.noel,mtrigobo,ralph.carpenter,robert.martin4,wmorales
+students:x:1003:aaron.brown14,aaron.fifer,aaron.herinckx,aaron.leondar,aaron.miller5,aaron.squier,abdallah.nawras,abdel.ouedraogo,abdi.sharif1,abdikadir.musa,abdoul.ouedraogo,abdulhai.mohammednur,abdullah.alshawa,abdullah.barghouti,abdullah.luay,abdulrahman.adnan,abie.jones,adaclarissa.chavez,adam.craig,adam.davis,adam.hogen,adam.kowalski,adam.lafleur,adam.meier1,adam.odeh,adhyavu.dessou,adrian.brown2,adrian.ledesma,adrian.smith2,adriana.hall,ahkil.jackson,ahmed.elnaser,ahmed.qadri,ahmeddayib.abdi,aidan.hankins,aidan.hazzard,aidan.reidel,aj.mallison,aj.stacher,alana.gilston,alaric.bartlett15,albert.farmer,albert.jonathan,alberto.morales2,aleasha.green,alec.deschene,alec.diefenbaugh,alec.meichtry,alejandra.dominguez,alejandro.contreras1,alex.calixtro,alex.graalum,alex.narayan,alex.novac,alex.peterson,alex.ruhland,alexa.bell,alexander.davis1,alexander.davis5,alexander.macleay,alexander.moretz,alexander.rose,alexander.ryan,alexander.vazquez,alexander.westerfield,alexander.yegorov,alexandra.davis2,alexis.sandoval,alexis.vidal2,ali.alkarbi,ali.almishalawee,ali.bulbul,ali.karimyar,ali.nemati,ali.saad1,alina.rodriguez,alina.rudnitskaya,alison.ryan2,allan.roberts,allison.luthykaplan,alseny.diallo,alwyn.lewis,alysha.recore,amanda.greer1,amanda.murphy1,amanda.voegtlin,amandah.brown,amariah.jordan,amen.mengistu,amina.foster,amy.baxter,an.huynh1,andre.smithjohannsen15,andrea.martin5,andres.hernandezgalvan,andrew.bailey,andrew.baumgart,andrew.dall,andrew.denzer,andrew.dimuzio,andrew.doser,andrew.fong,andrew.haley,andrew.jorgenson,andrew.kalik,andrew.kerner,andrew.niven,andrew.sadowski,andrew.snow,andrew.wiley,andrew.wong3,andy.grill,andy.keene1,andy.le1,andy.stewart,andy.trevino,andy.turner,anh.nguyen46,ani.pogula,anna.koch2,anthony.do,anthony.frisonpeters,anthony.galassi,anthony.hayden,anthony.molgaard,anthony.napoleon,anthony.pearce,anthony.smith13,antonio.solorio,antony.mau,april.pickett,arash.sobhani,aria.klucewicz,arild.valderhaug,armin.yazdani,arnob.das,aron.wesley,artem.newell,arthur.lang,asako.takahashi,ashley.newcomb,ashley.powell,ashlynn.crisp,ashten.bontrager,audrey.giesbers,augusto.delvalle,austin.higley
+users:x:100:dmandel,gd.iyer,ggross,glen.sasek,jabramso,jblack,jbockelm,jesse.black,kimberly.janik,lliang,michael.ross2,michael.trigoboff,mike.noel,mtrigobo,ralph.carpenter,robert.martin4,wmorales
+liam.beckman@syccuxas01:~> cut -d : -f3 < < (getent group sudo_)
+liam.beckman@syccuxas01:~> nanovi /etc/group
+  "/etc/group" [readonly] 59L, 3727Cat:x:25:
+audio:x:17:
+avahi:x:491:
+avahi-autoipd:x:499:
+bin:x:1:daemon
+cdrom:x:20:
+colord:x:488:
+console:x:21:
+daemon:x:2:
+dialout:x:16:
+disk:x:6:
+floppy:x:19:
+ftp:x:49:
+games:x:40:
+gdm:x:485:
+kmem:x:9:
+lock:x:54:
+lp:x:7:
+mail:x:12:postfix
+maildrop:x:59:postfix
+man:x:62:
+messagebus:x:495:
+modem:x:43:1,1Top2345678910,112345678920123
+news:x:13:24,12%
+nginx:x:481:25,15%
+nobody:x:65533:26,18%
+nogroup:x:65534:nobody27,111%
+nscd:x:493:28,113%
+ntadmin:x:71:29,116%
+ntp:x:498:30,119%
+polkitd:x:490:31,122%
+postfix:x:51:32,125%
+public:x:32:33,127%
+pulse:x:487:34,130%
+pulse-access:x:486:35,133%
+root:x:0:36,136%
+rtkit:x:489:37,138%
+scard:x:484:38,141%
+shadow:x:15:39,144%
+sshd:x:494:40,147%
+svn:x:482:41,150%
+sys:x:3:42,152%
+systemd-journal:x:497:43,155%
+tape:x:496:44,158%
+tftp:x:492:dnsmasq,tftp45,161%
+trusted:x:42:46,163%
+tty:x:5:47,166%
+utmp:x:22:48,169%
+uucp:x:14:49,172%
+video:x:33:gdm50,175%
+vscan:x:483:51,177%
+wheel:x:10:kgullber52,180%
+www:x:8:53,183%
+xok:x:41:54,186%F15-40277:x:1002:alexander.davis1,ben.portis,ben.stewart2,brennen.cramer,christoopher.bennett,christy.felty,doug.jones,edward.wisniewski,evan.watson2,gabrielle.ggoneaubash,ian.gore,james.shumaker15,jeffrey.munson1,jennifer.thompson13,jeremiahh.bennett,john.mayer2,john.robertson4,julian.kaufman,michaelangelo.owildeberry,nggon.phan,nicholas.pettit,nick.walker,orion.asker,paul.hubbard,sam.davey,stephen.hhaise,tyler.mcdonnell55,190%
+clamav:x:1001:vscan56,192%instructors:x:1000:cgoble,djones,dmandel,gd.iyer,ggross,glen.sasek,jabramso,jblaack,jbockelm,kavita.nautiyal,kimberly.janik,lliang,michael.ross2,michael.trigobofff,mike.noel,mtrigobo,ralph.carpenter,robert.martin4,wmorales57,195%students:x:1003:aaron.brown14,aaron.fifer,aaron.herinckx,aaron.leondar,aaron.milller5,aaron.squier,abdallah.nawras,abdel.ouedraogo,abdi.sharif1,abdikadir.musa,abbdoul.ouedraogo,abdulhai.mohammednur,abdullah.alshawa,abdullah.barghouti,abdullahh.luay,abdulrahman.adnan,abie.jones,adaclarissa.chavez,adam.craig,adam.davis,adamm.hogen,adam.kowalski,adam.lafleur,adam.meier1,adam.odeh,adhyavu.dessou,adrian.brrown2,adrian.ledesma,adrian.smith2,adriana.hall,ahkil.jackson,ahmed.elnaser,ahmedd.qadri,ahmeddayib.abdi,aidan.hankins,aidan.hazzard,aidan.reidel,aj.mallison,aj.sstacher,alana.gilston,alaric.bartlett15,albert.farmer,albert.jonathan,alberto.morrales2,aleasha.green,alec.deschene,alec.diefenbaugh,alec.meichtry,alejandra.dominnguez,alejandro.contreras1,alex.calixtro,alex.graalum,alex.narayan,alex.novac,aleex.peterson,alex.ruhland,alexa.bell,alexander.davis1,alexander.davis5,alexander.mmacleay,alexander.moretz,alexander.rose,alexander.ryan,alexander.vazquez,alexandeer.westerfield,alexander.yegorov,alexandra.davis2,alexis.sandoval,alexis.vidal2,aali.alkarbi,ali.almishalawee,ali.bulbul,ali.karimyar,ali.nemati,ali.saad1,alina.rrodriguez,alina.rudnitskaya,alison.ryan2,allan.roberts,allison.luthykaplan,alsenyy.diallo,alwyn.lewis,alysha.recore,amanda.greer1,amanda.murphy1,amanda.voegtlin,aamandah.brown,amariah.jordan,amen.mengistu,amina.foster,amy.baxter,an.huynh1,andrre.smithjohannsen15,andrea.martin5,andres.hernandezgalvan,andrew.bailey,andrew.baaumgart,andrew.dall,andrew.denzer,andrew.dimuzio,andrew.doser,andrew.fong,andrew..haley,andrew.jorgenson,andrew.kalik,andrew.kerner,andrew.niven,andrew.sadowski,aandrew.snow,andrew.wiley,andrew.wong3,andy.grill,andy.keene1,andy.le1,andy.stewarrt,andy.trevino,andy.turner,anh.nguyen46,ani.pogula,anna.koch2,anthony.do,anthonyy.frisonpeters,anthony.galassi,anthony.hayden,anthony.molgaard,anthony.napoleon,a58,198%instructors:x:1000:cgoble,djones,dmandel,gd.iyer,ggross,glen.sasek,jabramso,jblaack,jbockelm,kavita.nautiyal,kimberly.janik,lliang,michael.ross2,michael.trigobofff,mike.noel,mtrigobo,ralph.carpenter,robert.martin4,wmorales
+@                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               57,196%students:x:1003:aaron.brown14,aaron.fifer,aaron.herinckx,aaron.leondar,aaron.milller5,aaron.squier,abdallah.nawras,abdel.ouedraogo,abdi.sharif1,abdikadir.musa,abbdoul.ouedraogo,abdulhai.mohammednur,abdullah.alshawa,abdullah.barghouti,abdullahh.luay,abdulrahman.adnan,abie.jones,adaclarissa.chavez,adam.craig,adam.davis,adamm.hogen,adam.kowalski,adam.lafleur,adam.meier1,adam.odeh,adhyavu.dessou,adrian.brrown2,adrian.ledesma,adrian.smith2,adriana.hall,ahkil.jackson,ahmed.elnaser,ahmedd.qadri,ahmeddayib.abdi,aidan.hankins,aidan.hazzard,aidan.reidel,aj.mallison,aj.sstacher,alana.gilston,alaric.bartlett15,albert.farmer,albert.jonathan,alberto.morrales2,aleasha.green,alec.deschene,alec.diefenbaugh,alec.meichtry,alejandra.dominnguez,alejandro.contreras1,alex.calixtro,alex.graalum,alex.narayan,alex.novac,aleex.peterson,alex.ruhland,alexa.bell,alexander.davis1,alexander.davis5,alexander.mmacleay,alexander.moretz,alexander.rose,alexander.ryan,alexander.vazquez,alexandeer.westerfield,alexander.yegorov,alexandra.davis2,alexis.sandoval,alexis.vidal2,aali.alkarbi,ali.almishalawee,ali.bulbul,ali.karimyar,ali.nemati,ali.saad1,alina.rrodriguez,alina.rudnitskaya,alison.ryan2,allan.roberts,allison.luthykaplan,alsenyy.diallo,alwyn.lewis,alysha.recore,amanda.greer1,amanda.murphy1,amanda.voegtlin,aamandah.brown,amariah.jordan,amen.mengistu,amina.foster,amy.baxter,an.huynh1,andrre.smithjohannsen15,andrea.martin5,andres.hernandezgalvan,andrew.bailey,andrew.baaumgart,andrew.dall,andrew.denzer,andrew.dimuzio,andrew.doser,andrew.fong,andrew..haley,andrew.jorgenson,andrew.kalik,andrew.kerner,andrew.niven,andrew.sadowski,aandrew.snow,andrew.wiley,andrew.wong3,andy.grill,andy.keene1,andy.le1,andy.stewarrt,andy.trevino,andy.turner,anh.nguyen46,ani.pogula,anna.koch2,anthony.do,anthonyy.frisonpeters,anthony.galassi,anthony.hayden,anthony.molgaard,anthony.napoleon,a58,198%users:x:100:dmandel,gd.iyer,ggross,glen.sasek,jabramso,jblack,jbockelm,jesse.blaack,kimberly.janik,lliang,michael.ross2,michael.trigoboff,mike.noel,mtrigobo,ralpph.carpenter,robert.martin4,wmorales
+~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               59,1Botstudents:x:1003:aaron.brown14,aaron.fifer,aaron.herinckx,aaron.leondar,aaron.milller5,aaron.squier,abdallah.nawras,abdel.ouedraogo,abdi.sharif1,abdikadir.musa,abbdoul.ouedraogo,abdulhai.mohammednur,abdullah.alshawa,abdullah.barghouti,abdullahh.luay,abdulrahman.adnan,abie.jones,adaclarissa.chavez,adam.craig,adam.davis,adamm.hogen,adam.kowalski,adam.lafleur,adam.meier1,adam.odeh,adhyavu.dessou,adrian.brrown2,adrian.ledesma,adrian.smith2,adriana.hall,ahkil.jackson,ahmed.elnaser,ahmedd.qadri,ahmeddayib.abdi,aidan.hankins,aidan.hazzard,aidan.reidel,aj.mallison,aj.sstacher,alana.gilston,alaric.bartlett15,albert.farmer,albert.jonathan,alberto.morrales2,aleasha.green,alec.deschene,alec.diefenbaugh,alec.meichtry,alejandra.dominnguez,alejandro.contreras1,alex.calixtro,alex.graalum,alex.narayan,alex.novac,aleex.peterson,alex.ruhland,alexa.bell,alexander.davis1,alexander.davis5,alexander.mmacleay,alexander.moretz,alexander.rose,alexander.ryan,alexander.vazquez,alexandeer.westerfield,alexander.yegorov,alexandra.davis2,alexis.sandoval,alexis.vidal2,aali.alkarbi,ali.almishalawee,ali.bulbul,ali.karimyar,ali.nemati,ali.saad1,alina.rrodriguez,alina.rudnitskaya,alison.ryan2,allan.roberts,allison.luthykaplan,alsenyy.diallo,alwyn.lewis,alysha.recore,amanda.greer1,amanda.murphy1,amanda.voegtlin,aamandah.brown,amariah.jordan,amen.mengistu,amina.foster,amy.baxter,an.huynh1,andrre.smithjohannsen15,andrea.martin5,andres.hernandezgalvan,andrew.bailey,andrew.baaumgart,andrew.dall,andrew.denzer,andrew.dimuzio,andrew.doser,andrew.fong,andrew..haley,andrew.jorgenson,andrew.kalik,andrew.kerner,andrew.niven,andrew.sadowski,aandrew.snow,andrew.wiley,andrew.wong3,andy.grill,andy.keene1,andy.le1,andy.stewarrt,andy.trevino,andy.turner,anh.nguyen46,ani.pogula,anna.koch2,anthony.do,anthonyy.frisonpeters,anthony.galassi,anthony.hayden,anthony.molgaard,anthony.napoleon,a58,198%instructors:x:1000:cgoble,djones,dmandel,gd.iyer,ggross,glen.sasek,jabramso,jblaack,jbockelm,kavita.nautiyal,kimberly.janik,lliang,michael.ross2,michael.trigobofff,mike.noel,mtrigobo,ralph.carpenter,robert.martin4,wmorales
+@                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               @                                                                               57,196%clamav:x:1001:vscan56,196%F15-40277:x:1002:alexander.davis1,ben.portis,ben.stewart2,brennen.cramer,christoopher.bennett,christy.felty,doug.jones,edward.wisniewski,evan.watson2,gabrielle.ggoneaubash,ian.gore,james.shumaker15,jeffrey.munson1,jennifer.thompson13,jeremiahh.bennett,john.mayer2,john.robertson4,julian.kaufman,michaelangelo.owildeberry,nggon.phan,nicholas.pettit,nick.walker,orion.asker,paul.hubbard,sam.davey,stephen.hhaise,tyler.mcdonnell55,196%xok:x:41:54,196%www:x:8:53,196%wheel:x:10:kgullber52,196%vscan:x:483:51,196%video:x:33:gdm50,196%uucp:x:14:49,196%utmp:x:22:48,195%tty:x:5:47,195%trusted:x:42:46,195%tftp:x:492:dnsmasq,tftp45,195%tape:x:496:44,195%systemd-journal:x:497:43,195%sys:x:3:42,195%svn:x:482:@                                                                               @                                                                               41,193%sshd:x:494:40,192%shadow:x:15:39,192%scard:x:484:38,190%rtkit:x:489:@                                                                               @                                                                               @                                                                               @                                                                               @                                                                               37,187%root:x:0:36,187%pulse-access:x:486:35,187%pulse:x:487:34,186%public:x:32:33,186%postfix:x:51:32,186%polkitd:x:490:31,183%ntp:x:498:30,180%ntadmin:x:71:29,177%nscd:x:493:28,175%nogroup:x:65534:nobody27,172%nobody:x:65533:26,169%nginx:x:481:25,166%news:x:13:24,163%modem:x:43:23,161%messagebus:x:495:22,158%man:x:62:21,155%maildrop:x:59:postfix20,152%mail:x:12:postfix19,150%lp:x:7:18,147%lock:x:54:17,144%kmem:x:9:16,141%gdm:x:485:15,138%games:x:40:14,136%ftp:x:49:13,133%floppy:x:19:12,130%disk:x:6:11,127%dialout:x:16:10,125%daemon:x:2:9,122%console:x:21:8,119%colord:x:488:7,116%cdrom:x:20:6,113%bin:x:1:daemon5,111%avahi-autoipd:x:499:4,18%avahi:x:491:3,15%audio:x:17:2,12%at:x:25:1,1Top2345678910,112345678920123
+news:x:13:24,12%
+nginx:x:481:25,15%
+nobody:x:65533:26,18%
+nogroup:x:65534:nobody27,111%
+nscd:x:493:28,113%
+ntadmin:x:71:29,116%
+ntp:x:498:30,119%
+polkitd:x:490:31,122%
+postfix:x:51:32,125%
+public:x:32:33,127%
+pulse:x:487:34,130%
+pulse-access:x:486:35,133%
+root:x:0:36,136%
+rtkit:x:489:37,138%
+scard:x:484:38,141%
+shadow:x:15:39,144%
+sshd:x:494:40,147%
+svn:x:482:41,150%
+sys:x:3:42,152%
+systemd-journal:x:497:43,155%
+tape:x:496:44,158%
+tftp:x:492:dnsmasq,tftp45,161%
+trusted:x:42:46,163%
+tty:x:5:47,166%
+utmp:x:22:48,169%
+uucp:x:14:49,172%
+video:x:33:gdm50,175%
+vscan:x:483:51,177%
+wheel:x:10:kgullber52,180%
+www:x:8:53,183%
+xok:x:41:54,186%:q!liam.beckman@syccuxas01:~> getent group sudo
+liam.beckman@syccuxas01:~> getent group sudo
+at:x:25:
+audio:x:17:
+avahi:x:491:
+avahi-autoipd:x:499:
+bin:x:1:daemon
+cdrom:x:20:
+colord:x:488:
+console:x:21:
+daemon:x:2:
+dialout:x:16:
+disk:x:6:
+floppy:x:19:
+ftp:x:49:
+games:x:40:
+gdm:x:485:
+kmem:x:9:
+lock:x:54:
+lp:x:7:
+mail:x:12:postfix
+maildrop:x:59:postfix
+man:x:62:
+messagebus:x:495:
+modem:x:43:
+news:x:13:
+nginx:x:481:
+nobody:x:65533:
+nogroup:x:65534:nobody
+nscd:x:493:
+ntadmin:x:71:
+ntp:x:498:
+polkitd:x:490:
+postfix:x:51:
+public:x:32:
+pulse:x:487:
+pulse-access:x:486:
+root:x:0:
+rtkit:x:489:
+scard:x:484:
+shadow:x:15:
+sshd:x:494:
+svn:x:482:
+sys:x:3:
+systemd-journal:x:497:
+tape:x:496:
+tftp:x:492:dnsmasq,tftp
+trusted:x:42:
+tty:x:5:
+utmp:x:22:
+uucp:x:14:
+video:x:33:gdm
+vscan:x:483:
+wheel:x:10:kgullber
+www:x:8:
+xok:x:41:
+F15-40277:x:1002:alexander.davis1,ben.portis,ben.stewart2,brennen.cramer,christopher.bennett,christy.felty,doug.jones,edward.wisniewski,evan.watson2,gabrielle.goneaubash,ian.gore,james.shumaker15,jeffrey.munson1,jennifer.thompson13,jeremiah.bennett,john.mayer2,john.robertson4,julian.kaufman,michaelangelo.owildeberry,ngon.phan,nicholas.pettit,nick.walker,orion.asker,paul.hubbard,sam.davey,stephen.haise,tyler.mcdonnell
+clamav:x:1001:vscan
+instructors:x:1000:cgoble,djones,dmandel,gd.iyer,ggross,glen.sasek,jabramso,jblack,jbockelm,kavita.nautiyal,kimberly.janik,lliang,michael.ross2,michael.trigoboff,mike.noel,mtrigobo,ralph.carpenter,robert.martin4,wmorales
+students:x:1003:aaron.brown14,aaron.fifer,aaron.herinckx,aaron.leondar,aaron.miller5,aaron.squier,abdallah.nawras,abdel.ouedraogo,abdi.sharif1,abdikadir.musa,abdoul.ouedraogo,abdulhai.mohammednur,abdullah.alshawa,abdullah.barghouti,abdullah.luay,abdulrahman.adnan,abie.jones,adaclarissa.chavez,adam.craig,adam.davis,adam.hogen,adam.kowalski,adam.lafleur,adam.meier1,adam.odeh,adhyavu.dessou,adrian.brown2,adrian.ledesma,adrian.smith2,adriana.hall,ahkil.jackson,ahmed.elnaser,ahmed.qadri,ahmeddayib.abdi,aidan.hankins,aidan.hazzard,aidan.reidel,aj.mallison,aj.stacher,alana.gilston,alaric.bartlett15,albert.farmer,albert.jonathan,alberto.morales2,aleasha.green,alec.deschene,alec.diefenbaugh,alec.meichtry,alejandra.dominguez,alejandro.contreras1,alex.calixtro,alex.graalum,alex.narayan,alex.novac,alex.peterson,alex.ruhland,alexa.bell,alexander.davis1,alexander.davis5,alexander.macleay,alexander.moretz,alexander.rose,alexander.ryan,alexander.vazquez,alexander.westerfield,alexander.yegorov,alexandra.davis2,alexis.sandoval,alexis.vidal2,ali.alkarbi,ali.almishalawee,ali.bulbul,ali.karimyar,ali.nemati,ali.saad1,alina.rodriguez,alina.rudnitskaya,alison.ryan2,allan.roberts,allison.luthykaplan,alseny.diallo,alwyn.lewis,alysha.recore,amanda.greer1,amanda.murphy1,amanda.voegtlin,amandah.brown,amariah.jordan,amen.mengistu,amina.foster,amy.baxter,an.huynh1,andre.smithjohannsen15,andrea.martin5,andres.hernandezgalvan,andrew.bailey,andrew.baumgart,andrew.dall,andrew.denzer,andrew.dimuzio,andrew.doser,andrew.fong,andrew.haley,andrew.jorgenson,andrew.kalik,andrew.kerner,andrew.niven,andrew.sadowski,andrew.snow,andrew.wiley,andrew.wong3,andy.grill,andy.keene1,andy.le1,andy.stewart,andy.trevino,andy.turner,anh.nguyen46,ani.pogula,anna.koch2,anthony.do,anthony.frisonpeters,anthony.galassi,anthony.hayden,anthony.molgaard,anthony.napoleon,anthony.pearce,anthony.smith13,antonio.solorio,antony.mau,april.pickett,arash.sobhani,aria.klucewicz,arild.valderhaug,armin.yazdani,arnob.das,aron.wesley,artem.newell,arthur.lang,asako.takahashi,ashley.newcomb,ashley.powell,ashlynn.crisp,ashten.bontrager,audrey.giesbers,augusto.delvalle,austin.higley
+users:x:100:dmandel,gd.iyer,ggross,glen.sasek,jabramso,jblack,jbockelm,jesse.black,kimberly.janik,lliang,michael.ross2,michael.trigoboff,mike.noel,mtrigobo,ralph.carpenter,robert.martin4,wmorales
+liam.beckman@syccuxas01:~> getent group sudovi /etc/groupgetent group sudogroups
+students
+liam.beckman@syccuxas01:~> groupsetent group sudovi /etc/groupcut -d: -f3 < <(getent group sudo)getent groupid -u liam.beckmangroupscat /etc/groupid -u liam.beckmancat /etc/group
+at:x:25:
+audio:x:17:
+avahi:x:491:
+avahi-autoipd:x:499:
+bin:x:1:daemon
+cdrom:x:20:
+colord:x:488:
+console:x:21:
+daemon:x:2:
+dialout:x:16:
+disk:x:6:
+floppy:x:19:
+ftp:x:49:
+games:x:40:
+gdm:x:485:
+kmem:x:9:
+lock:x:54:
+lp:x:7:
+mail:x:12:postfix
+maildrop:x:59:postfix
+man:x:62:
+messagebus:x:495:
+modem:x:43:
+news:x:13:
+nginx:x:481:
+nobody:x:65533:
+nogroup:x:65534:nobody
+nscd:x:493:
+ntadmin:x:71:
+ntp:x:498:
+polkitd:x:490:
+postfix:x:51:
+public:x:32:
+pulse:x:487:
+pulse-access:x:486:
+root:x:0:
+rtkit:x:489:
+scard:x:484:
+shadow:x:15:
+sshd:x:494:
+svn:x:482:
+sys:x:3:
+systemd-journal:x:497:
+tape:x:496:
+tftp:x:492:dnsmasq,tftp
+trusted:x:42:
+tty:x:5:
+utmp:x:22:
+uucp:x:14:
+video:x:33:gdm
+vscan:x:483:
+wheel:x:10:kgullber
+www:x:8:
+xok:x:41:
+F15-40277:x:1002:alexander.davis1,ben.portis,ben.stewart2,brennen.cramer,christopher.bennett,christy.felty,doug.jones,edward.wisniewski,evan.watson2,gabrielle.goneaubash,ian.gore,james.shumaker15,jeffrey.munson1,jennifer.thompson13,jeremiah.bennett,john.mayer2,john.robertson4,julian.kaufman,michaelangelo.owildeberry,ngon.phan,nicholas.pettit,nick.walker,orion.asker,paul.hubbard,sam.davey,stephen.haise,tyler.mcdonnell
+clamav:x:1001:vscan
+instructors:x:1000:cgoble,djones,dmandel,gd.iyer,ggross,glen.sasek,jabramso,jblack,jbockelm,kavita.nautiyal,kimberly.janik,lliang,michael.ross2,michael.trigoboff,mike.noel,mtrigobo,ralph.carpenter,robert.martin4,wmorales
+students:x:1003:aaron.brown14,aaron.fifer,aaron.herinckx,aaron.leondar,aaron.miller5,aaron.squier,abdallah.nawras,abdel.ouedraogo,abdi.sharif1,abdikadir.musa,abdoul.ouedraogo,abdulhai.mohammednur,abdullah.alshawa,abdullah.barghouti,abdullah.luay,abdulrahman.adnan,abie.jones,adaclarissa.chavez,adam.craig,adam.davis,adam.hogen,adam.kowalski,adam.lafleur,adam.meier1,adam.odeh,adhyavu.dessou,adrian.brown2,adrian.ledesma,adrian.smith2,adriana.hall,ahkil.jackson,ahmed.elnaser,ahmed.qadri,ahmeddayib.abdi,aidan.hankins,aidan.hazzard,aidan.reidel,aj.mallison,aj.stacher,alana.gilston,alaric.bartlett15,albert.farmer,albert.jonathan,alberto.morales2,aleasha.green,alec.deschene,alec.diefenbaugh,alec.meichtry,alejandra.dominguez,alejandro.contreras1,alex.calixtro,alex.graalum,alex.narayan,alex.novac,alex.peterson,alex.ruhland,alexa.bell,alexander.davis1,alexander.davis5,alexander.macleay,alexander.moretz,alexander.rose,alexander.ryan,alexander.vazquez,alexander.westerfield,alexander.yegorov,alexandra.davis2,alexis.sandoval,alexis.vidal2,ali.alkarbi,ali.almishalawee,ali.bulbul,ali.karimyar,ali.nemati,ali.saad1,alina.rodriguez,alina.rudnitskaya,alison.ryan2,allan.roberts,allison.luthykaplan,alseny.diallo,alwyn.lewis,alysha.recore,amanda.greer1,amanda.murphy1,amanda.voegtlin,amandah.brown,amariah.jordan,amen.mengistu,amina.foster,amy.baxter,an.huynh1,andre.smithjohannsen15,andrea.martin5,andres.hernandezgalvan,andrew.bailey,andrew.baumgart,andrew.dall,andrew.denzer,andrew.dimuzio,andrew.doser,andrew.fong,andrew.haley,andrew.jorgenson,andrew.kalik,andrew.kerner,andrew.niven,andrew.sadowski,andrew.snow,andrew.wiley,andrew.wong3,andy.grill,andy.keene1,andy.le1,andy.stewart,andy.trevino,andy.turner,anh.nguyen46,ani.pogula,anna.koch2,anthony.do,anthony.frisonpeters,anthony.galassi,anthony.hayden,anthony.molgaard,anthony.napoleon,anthony.pearce,anthony.smith13,antonio.solorio,antony.mau,april.pickett,arash.sobhani,aria.klucewicz,arild.valderhaug,armin.yazdani,arnob.das,aron.wesley,artem.newell,arthur.lang,asako.takahashi,ashley.newcomb,ashley.powell,ashlynn.crisp,ashten.bontrager,audrey.giesbers,augusto.delvalle,austin.higley
+users:x:100:dmandel,gd.iyer,ggross,glen.sasek,jabramso,jblack,jbockelm,jesse.black,kimberly.janik,lliang,michael.ross2,michael.trigoboff,mike.noel,mtrigobo,ralph.carpenter,robert.martin4,wmorales
+liam.beckman@syccuxas01:~> cat /etc/groupgroupsetent group sudovi /etc/groupgetent group sudovi /etc/groupcut -d: -f3 < <(getent group sudo)vi /etc/groupcut -d: -f3 < <(getent group sudo)vi /etc/groupgetent group sudo
+liam.beckman@syccuxas01:~> getent group sudogetent group sudocat /etc/groupgroupsetent group sudovi /etc/groupcut -d: -f3 < <(getent group sudo)getent group
+at:x:25:
+audio:x:17:
+avahi:x:491:
+avahi-autoipd:x:499:
+bin:x:1:daemon
+cdrom:x:20:
+colord:x:488:
+console:x:21:
+daemon:x:2:
+dialout:x:16:
+disk:x:6:
+floppy:x:19:
+ftp:x:49:
+games:x:40:
+gdm:x:485:
+kmem:x:9:
+lock:x:54:
+lp:x:7:
+mail:x:12:postfix
+maildrop:x:59:postfix
+man:x:62:
+messagebus:x:495:
+modem:x:43:
+news:x:13:
+nginx:x:481:
+nobody:x:65533:
+nogroup:x:65534:nobody
+nscd:x:493:
+ntadmin:x:71:
+ntp:x:498:
+polkitd:x:490:
+postfix:x:51:
+public:x:32:
+pulse:x:487:
+pulse-access:x:486:
+root:x:0:
+rtkit:x:489:
+scard:x:484:
+shadow:x:15:
+sshd:x:494:
+svn:x:482:
+sys:x:3:
+systemd-journal:x:497:
+tape:x:496:
+tftp:x:492:dnsmasq,tftp
+trusted:x:42:
+tty:x:5:
+utmp:x:22:
+uucp:x:14:
+video:x:33:gdm
+vscan:x:483:
+wheel:x:10:kgullber
+www:x:8:
+xok:x:41:
+F15-40277:x:1002:alexander.davis1,ben.portis,ben.stewart2,brennen.cramer,christopher.bennett,christy.felty,doug.jones,edward.wisniewski,evan.watson2,gabrielle.goneaubash,ian.gore,james.shumaker15,jeffrey.munson1,jennifer.thompson13,jeremiah.bennett,john.mayer2,john.robertson4,julian.kaufman,michaelangelo.owildeberry,ngon.phan,nicholas.pettit,nick.walker,orion.asker,paul.hubbard,sam.davey,stephen.haise,tyler.mcdonnell
+clamav:x:1001:vscan
+instructors:x:1000:cgoble,djones,dmandel,gd.iyer,ggross,glen.sasek,jabramso,jblack,jbockelm,kavita.nautiyal,kimberly.janik,lliang,michael.ross2,michael.trigoboff,mike.noel,mtrigobo,ralph.carpenter,robert.martin4,wmorales
+students:x:1003:aaron.brown14,aaron.fifer,aaron.herinckx,aaron.leondar,aaron.miller5,aaron.squier,abdallah.nawras,abdel.ouedraogo,abdi.sharif1,abdikadir.musa,abdoul.ouedraogo,abdulhai.mohammednur,abdullah.alshawa,abdullah.barghouti,abdullah.luay,abdulrahman.adnan,abie.jones,adaclarissa.chavez,adam.craig,adam.davis,adam.hogen,adam.kowalski,adam.lafleur,adam.meier1,adam.odeh,adhyavu.dessou,adrian.brown2,adrian.ledesma,adrian.smith2,adriana.hall,ahkil.jackson,ahmed.elnaser,ahmed.qadri,ahmeddayib.abdi,aidan.hankins,aidan.hazzard,aidan.reidel,aj.mallison,aj.stacher,alana.gilston,alaric.bartlett15,albert.farmer,albert.jonathan,alberto.morales2,aleasha.green,alec.deschene,alec.diefenbaugh,alec.meichtry,alejandra.dominguez,alejandro.contreras1,alex.calixtro,alex.graalum,alex.narayan,alex.novac,alex.peterson,alex.ruhland,alexa.bell,alexander.davis1,alexander.davis5,alexander.macleay,alexander.moretz,alexander.rose,alexander.ryan,alexander.vazquez,alexander.westerfield,alexander.yegorov,alexandra.davis2,alexis.sandoval,alexis.vidal2,ali.alkarbi,ali.almishalawee,ali.bulbul,ali.karimyar,ali.nemati,ali.saad1,alina.rodriguez,alina.rudnitskaya,alison.ryan2,allan.roberts,allison.luthykaplan,alseny.diallo,alwyn.lewis,alysha.recore,amanda.greer1,amanda.murphy1,amanda.voegtlin,amandah.brown,amariah.jordan,amen.mengistu,amina.foster,amy.baxter,an.huynh1,andre.smithjohannsen15,andrea.martin5,andres.hernandezgalvan,andrew.bailey,andrew.baumgart,andrew.dall,andrew.denzer,andrew.dimuzio,andrew.doser,andrew.fong,andrew.haley,andrew.jorgenson,andrew.kalik,andrew.kerner,andrew.niven,andrew.sadowski,andrew.snow,andrew.wiley,andrew.wong3,andy.grill,andy.keene1,andy.le1,andy.stewart,andy.trevino,andy.turner,anh.nguyen46,ani.pogula,anna.koch2,anthony.do,anthony.frisonpeters,anthony.galassi,anthony.hayden,anthony.molgaard,anthony.napoleon,anthony.pearce,anthony.smith13,antonio.solorio,antony.mau,april.pickett,arash.sobhani,aria.klucewicz,arild.valderhaug,armin.yazdani,arnob.das,aron.wesley,artem.newell,arthur.lang,asako.takahashi,ashley.newcomb,ashley.powell,ashlynn.crisp,ashten.bontrager,audrey.giesbers,augusto.delvalle,austin.higley
+users:x:100:dmandel,gd.iyer,ggross,glen.sasek,jabramso,jblack,jbockelm,jesse.black,kimberly.janik,lliang,michael.ross2,michael.trigoboff,mike.noel,mtrigobo,ralph.carpenter,robert.martin4,wmorales
+liam.beckman@syccuxas01:~> groups
+students
+liam.beckman@syccuxas01:~> logout

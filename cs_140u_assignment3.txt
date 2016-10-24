@@ -1,21 +1,42 @@
 liam beckman
-10/19/16
+10/23/16
 cs140u assignment 3
 online
+
+-----------------------------------------
+-----------------------------------------
 
 Log on to your UNIX system
 
 1. Give three different commands to get back to your home directory.
-$ cd  
-$ cd ~
-$ cd /home/students/liam.beckman/
+
+liam.beckman@syccuxas01:~> cd  
+liam.beckman@syccuxas01:~> cd ~
+liam.beckman@syccuxas01:~> cd /home/student/liam.beckman/
+
+-----------------------------------------
+-----------------------------------------
 
 2. Show the names of all hidden files in your home directory. Show your session.
 
-$ cd -a
+liam.beckman@syccuxas01:~> ls -A | grep '^\.'
+.bash_history
+.bashrc
+.config
+.emacs
+.fonts
+.gnu-emacs
+.inputrc
+.local
+.profile
+.viminfo
+.xim.template
+.xinitrc.template
+
+-----------------------------------------
+-----------------------------------------
 
 3. Write down the following and show the session that you used to obtain the required information:
-
 
 Your user name (also known as login name)
 Your user ID
@@ -23,44 +44,118 @@ Your group ID and group name
 User names of users in your group
 Number of groups that you are a member of
  
+
+liam.beckman@syccuxas01:~> whoami
 liam.beckman
 
+liam.beckman@syccuxas01:~> id -u liam.beckman
+4881
 
+liam.beckman@syccuxas01:~> getent group
+<...> 1003 students <...>
+
+liam.beckman@syccuxas01:~> getent group
+<too long>
+
+liam.beckman@syccuxas01:~> groups
+<I belong to one group> students
+
+-----------------------------------------
+-----------------------------------------
 
 4. What are the permissions for your home directory set by your system administrator? What command did you use to answer the question? Show your session.
-user ---- 
-group --- 
-others -- 
-$ cd -l
+
+user 	rwx
+group  	r-x
+others  r-x
+
+liam.beckman@syccuxas01:/home/student> ls -l | grep liam.beckman
+drwxr-xr-x  10 liam.beckman                 students      4096 Oct 23 22:08 liam.beckman
+
+-----------------------------------------
+-----------------------------------------
 
 5. Suppose that you want to block everyone (except you) at the main door (your ~ direcotry) of your directory hierarchy (i.e., your home directory-not the files inside the directory), as shown in Figure Lab7.1 (below). Take the necessary steps to do this. Show the session that you used to accomplish the task and confirm that the task has actually been done.
 
+liam.beckman@syccuxas01:/home/student> chmod 700 /home/student/liam.beckman
+liam.beckman@syccuxas01:/home/student> ls -l | grep liam.beckman
+drwx------  10 liam.beckman                 students      4096 Oct 23 22:08 liam.beckman
+
+-----------------------------------------
+-----------------------------------------
 
 6. What do . (dot), .. (dotdot), and ~ represent in UNIX? Show use of all three.
+
 .  ---- current directory
+
+liam.beckman@syccuxas01:~> mv /Documents/Documents/cds140u/ReEADME.md .
+
 .. ---- parent directory
+
+liam.beckman@syccuxas01:/home/student> ls -alt .. | grep 'k'
+drwx------   29 kgullber users  4096 Sep 21  2015 kgullber
+drwx------   23 root     root   4096 Dec 30  2013 keng
+
 ~  ---- home directory
+
+liam.beckman@syccuxas01:~> ls -li ~ | grep 'foo'
+5375945 -rw-r--r-- 1 liam.beckman students    78 Oct 23 17:47 foobar.txt
+5375944 -rw-r--r-- 1 liam.beckman students     0 Oct 23 17:45 foo.txt
+
+-----------------------------------------
+-----------------------------------------
 
 7. What is an inode number in UNIX? Show the command for displaying the inode numbers for the root directory and your home directory.
 
+An inode is a representational data structure in used to store information about filesystems and files. Inodes hold the filesystem's metadata, such as memory block location, modiifcations, modification times, permissions, etc.
+
+An inode number specifically is a unique location in an inode table, or inode array. The inode number identifies the metadata of a particular filesystem. 
+
+liam.beckman@syccuxas01:~> ls -i /
+liam.beckman@syccuxas01:~> ls -i /home/student/liam.beckman
+
+-----------------------------------------
+-----------------------------------------
 
 8. Give the command for removing an empty directory called personal under your home directory. How would you remove it if the personal directory is not empty?
 
-rm home.students/liam.beckman/personal
-rm -r home.students/liam.beckman/personal 			(recursive)
+liam.beckman@syccuxas01:~> rm -r home.students/liam.beckman/personal
+
+-----------------------------------------
+-----------------------------------------
 
 9. Create a file, called sample, in your home directory and set its permissions to read and write for yourself, read for users in your group, and none to everyone else. What command did you use to create the file? What command did you use to set privileges?
-$ touch sample
-$ chmod 640
+
+liam.beckman@syccuxas01:~> touch sample
+liam.beckman@syccuxas01:~> chmod 640 home/student/liam.beckman/sample
+
+-----------------------------------------
+-----------------------------------------
 
 10. Suppose that umask is set to 022 on a system. What will be the default permissions for the new directories and text files that you create? Explain your answer.
-umask 022 is the opposite of chmod 755. As such, the following permissions will apply to new directories and files: 124 xwr
-user ---- rwx
-group --- rx
-others -- rx
 
+liam.beckman@syccuxas01:~> umask
+0022
+liam.beckman@syccuxas01:~> umask -S
+u=rwx,g=rx,o=rx
+
+umask 022 is the opposite (or complement) of chmod 755. As such, the following default permissions will apply to new directories and files: 
+user     rwx
+group    r-x
+others   r-x
+
+So a new file will have the following permissions:
+-rwxr-xr-x
+
+And a new directory will have the following permissions:
+drwxr-xr-x
+
+
+-----------------------------------------
+-----------------------------------------
 
 11. Assume that you have two files, f1 and f2, that you want to concatenate and store in a file called f1nf2. Show the cat command needed to perform this task. Now show the cat command needed to put your name, taken from the keyboard, as the last line of f1nf2.
-$ cat f1 > f1nf2 
-$ cat f2 > f1nf2
-$ echo liam | cat > f1nf2
+
+liam.beckman@syccuxas01:~> touch f1nf2
+liam.beckman@syccuxas01:~> cat f1 f2 >> f1nf2 
+liam.beckman@syccuxas01:~> echo liam >> f1nf2

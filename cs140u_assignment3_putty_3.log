@@ -1,0 +1,235 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2016.10.23 22:02:57 =~=~=~=~=~=~=~=~=~=~=~=
+login as: liam.beckman
+Using keyboard-interactive authentication.
+Password: 
+Last login: Sun Oct 23 17:13:03 2016 from 204-195-41-115.wavecable.com
+
+liam.beckman@syccuxas01:~> ls
+bin     data.txt   f1     f2    foobar.txt  lab4  newfile      sample
+cs140u  Documents  f1nf2  file  foo.txt     mbox  public_html  temp
+liam.beckman@syccuxas01:~> mkfdir personal
+liam.beckman@syccuxas01:~> touch test.txt
+liam.beckman@syccuxas01:~> ls
+bin       Documents  f2          foo.txt  newfile      sample
+cs140u    f1         file        lab4     personal     temp
+data.txt  f1nf2      foobar.txt  mbox     public_html  test.txt
+liam.beckman@syccuxas01:~> cd personal/
+liam.beckman@syccuxas01:~/personal> ls
+liam.beckman@syccuxas01:~/personal> touch test.txt
+liam.beckman@syccuxas01:~/personal> ls
+test.txt
+liam.beckman@syccuxas01:~/personal> cd ..
+liam.beckman@syccuxas01:~> rm -r personal
+liam.beckman@syccuxas01:~> ls
+bin     data.txt   f1     f2    foobar.txt  lab4  newfile      sample  test.txt
+cs140u  Documents  f1nf2  file  foo.txt     mbox  public_html  temp
+liam.beckman@syccuxas01:~> dvi f1nrm f1nf2
+liam.beckman@syccuxas01:~> ls
+bin     data.txt   f1  file        foo.txt  mbox     public_html  temp
+cs140u  Documents  f2  foobar.txt  lab4     newfile  sample       test.txt
+liam.beckman@syccuxas01:~> rm f1
+liam.beckman@syccuxas01:~> rm f2
+liam.beckman@syccuxas01:~> vi f1
+  "f1" [New File]~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               0,0-1All-- INSERT --0,1Allb1,2c321a2b3c41,3All:wq"f1" [New] 1L, 4C written
+liam.beckman@syccuxas01:~> vi f2
+  "f2" [New File]~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               0,0-1All-- INSERT --0,1Alld1,2e3f4L54:541,3All:wq"f2" [New] 1L, 4C written
+liam.beckman@syccuxas01:~> vi f1
+  "f1" 1L, 4Cabc
+~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               1,3All:q!liam.beckman@syccuxas01:~> cacat f1 f2 > f1nf2
+liam.beckman@syccuxas01:~> ls
+bin     data.txt   f1     f2    foobar.txt  lab4  newfile      sample  test.txt
+cs140u  Documents  f1nf2  file  foo.txt     mbox  public_html  temp
+liam.beckman@syccuxas01:~> vi f1nf2
+  "f1nf2" 2L, 8Cabc
+def
+~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               1,1All:qliam.beckman@syccuxas01:~> echo liam |  >> f1nf2
+liam.beckman@syccuxas01:~> echo liam >> f1nf2vi
+  "f1nf2" 3L, 13Cabc
+def
+liam
+~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               1,1All:wqliam.beckman@syccuxas01:~> ;sls -A | gre[ p '^/.'
+liam.beckman@syccuxas01:~> ls
+bin     data.txt   f1     f2    foobar.txt  lab4  newfile      sample  test.txt
+cs140u  Documents  f1nf2  file  foo.txt     mbox  public_html  temp
+liam.beckman@syccuxas01:~> ls -a
+.              data.txt   .fonts      mbox         .viminfo
+..             Documents  foobar.txt  newfile      .xim.template
+.bash_history  .emacs     foo.txt     .profile     .xinitrc.template
+.bashrc        f1         .gnu-emacs  public_html
+bin            f1nf2      .inputrc    sample
+.config        f2         lab4        temp
+cs140u         file       .local      test.txt
+liam.beckman@syccuxas01:~> ls -a -A | grep '^/.'
+liam.beckman@syccuxas01:~> ls -A | grep '^/.'a
+liam.beckman@syccuxas01:~> ls -a A
+.bash_history  Documents  .fonts      .local       temp
+.bashrc        .emacs     foobar.txt  mbox         test.txt
+bin            f1         foo.txt     newfile      .viminfo
+.config        f1nf2      .gnu-emacs  .profile     .xim.template
+cs140u         f2         .inputrc    public_html  .xinitrc.template
+data.txt       file       lab4        sample
+liam.beckman@syccuxas01:~> ls -a | grep .
+.
+..
+.bash_history
+.bashrc
+bin
+.config
+cs140u
+data.txt
+Documents
+.emacs
+f1
+f1nf2
+f2
+file
+.fonts
+foobar.txt
+foo.txt
+.gnu-emacs
+.inputrc
+lab4
+.local
+mbox
+newfile
+.profile
+public_html
+sample
+temp
+test.txt
+.viminfo
+.xim.template
+.xinitrc.template
+liam.beckman@syccuxas01:~> ls -a | grep .'.&..^.'
+.
+..
+.bash_history
+.bashrc
+bin
+.config
+cs140u
+data.txt
+Documents
+.emacs
+f1
+f1nf2
+f2
+file
+.fonts
+foobar.txt
+foo.txt
+.gnu-emacs
+.inputrc
+lab4
+.local
+mbox
+newfile
+.profile
+public_html
+sample
+temp
+test.txt
+.viminfo
+.xim.template
+.xinitrc.template
+liam.beckman@syccuxas01:~> ls -a | grep '^.'\.'
+.
+..
+.bash_history
+.bashrc
+.config
+.emacs
+.fonts
+.gnu-emacs
+.inputrc
+.local
+.profile
+.viminfo
+.xim.template
+.xinitrc.template
+liam.beckman@syccuxas01:~> ls -a | grep '^\.'AQ
+.bash_history
+.bashrc
+.config
+.emacs
+.fonts
+.gnu-emacs
+.inputrc
+.local
+.profile
+.viminfo
+.xim.template
+.xinitrc.template
+liam.beckman@syccuxas01:~> whoami
+liam.beckman
+liam.beckman@syccuxas01:~> ifd- -u liam.beckman
+4881
+liam.beckman@syccuxas01:~> getent group
+at:x:25:
+audio:x:17:
+avahi:x:491:
+avahi-autoipd:x:499:
+bin:x:1:daemon
+cdrom:x:20:
+colord:x:488:
+console:x:21:
+daemon:x:2:
+dialout:x:16:
+disk:x:6:
+floppy:x:19:
+ftp:x:49:
+games:x:40:
+gdm:x:485:
+kmem:x:9:
+lock:x:54:
+lp:x:7:
+mail:x:12:postfix
+maildrop:x:59:postfix
+man:x:62:
+messagebus:x:495:
+modem:x:43:
+news:x:13:
+nginx:x:481:
+nobody:x:65533:
+nogroup:x:65534:nobody
+nscd:x:493:
+ntadmin:x:71:
+ntp:x:498:
+polkitd:x:490:
+postfix:x:51:
+public:x:32:
+pulse:x:487:
+pulse-access:x:486:
+root:x:0:
+rtkit:x:489:
+scard:x:484:
+shadow:x:15:
+sshd:x:494:
+svn:x:482:
+sys:x:3:
+systemd-journal:x:497:
+tape:x:496:
+tftp:x:492:dnsmasq,tftp
+trusted:x:42:
+tty:x:5:
+utmp:x:22:
+uucp:x:14:
+video:x:33:gdm
+vscan:x:483:
+wheel:x:10:kgullber
+www:x:8:
+xok:x:41:
+F15-40277:x:1002:alexander.davis1,ben.portis,ben.stewart2,brennen.cramer,christopher.bennett,christy.felty,doug.jones,edward.wisniewski,evan.watson2,gabrielle.goneaubash,ian.gore,james.shumaker15,jeffrey.munson1,jennifer.thompson13,jeremiah.bennett,john.mayer2,john.robertson4,julian.kaufman,michaelangelo.owildeberry,ngon.phan,nicholas.pettit,nick.walker,orion.asker,paul.hubbard,sam.davey,stephen.haise,tyler.mcdonnell
+clamav:x:1001:vscan
+instructors:x:1000:cgoble,djones,dmandel,gd.iyer,ggross,glen.sasek,jabramso,jblack,jbockelm,kavita.nautiyal,kimberly.janik,lliang,michael.ross2,michael.trigoboff,mike.noel,mtrigobo,ralph.carpenter,robert.martin4,wmorales
+students:x:1003:aaron.brown14,aaron.fifer,aaron.herinckx,aaron.leondar,aaron.miller5,aaron.squier,abdallah.nawras,abdel.ouedraogo,abdi.sharif1,abdikadir.musa,abdoul.ouedraogo,abdulhai.mohammednur,abdullah.alshawa,abdullah.barghouti,abdullah.luay,abdulrahman.adnan,abie.jones,adaclarissa.chavez,adam.craig,adam.davis,adam.hogen,adam.kowalski,adam.lafleur,adam.meier1,adam.odeh,adhyavu.dessou,adrian.brown2,adrian.ledesma,adrian.smith2,adriana.hall,ahkil.jackson,ahmed.elnaser,ahmed.qadri,ahmeddayib.abdi,aidan.hankins,aidan.hazzard,aidan.reidel,aj.mallison,aj.stacher,alana.gilston,alaric.bartlett15,albert.farmer,albert.jonathan,alberto.morales2,aleasha.green,alec.deschene,alec.diefenbaugh,alec.meichtry,alejandra.dominguez,alejandro.contreras1,alex.calixtro,alex.graalum,alex.narayan,alex.novac,alex.peterson,alex.ruhland,alexa.bell,alexander.davis1,alexander.davis5,alexander.macleay,alexander.moretz,alexander.rose,alexander.ryan,alexander.vazquez,alexander.westerfield,alexander.yegorov,alexandra.davis2,alexis.sandoval,alexis.vidal2,ali.alkarbi,ali.almishalawee,ali.bulbul,ali.karimyar,ali.nemati,ali.saad1,alina.rodriguez,alina.rudnitskaya,alison.ryan2,allan.roberts,allison.luthykaplan,alseny.diallo,alwyn.lewis,alysha.recore,amanda.greer1,amanda.murphy1,amanda.voegtlin,amandah.brown,amariah.jordan,amen.mengistu,amina.foster,amy.baxter,an.huynh1,andre.smithjohannsen15,andrea.martin5,andres.hernandezgalvan,andrew.bailey,andrew.baumgart,andrew.dall,andrew.denzer,andrew.dimuzio,andrew.doser,andrew.fong,andrew.haley,andrew.jorgenson,andrew.kalik,andrew.kerner,andrew.niven,andrew.sadowski,andrew.snow,andrew.wiley,andrew.wong3,andy.grill,andy.keene1,andy.le1,andy.stewart,andy.trevino,andy.turner,anh.nguyen46,ani.pogula,anna.koch2,anthony.do,anthony.frisonpeters,anthony.galassi,anthony.hayden,anthony.molgaard,anthony.napoleon,anthony.pearce,anthony.smith13,antonio.solorio,antony.mau,april.pickett,arash.sobhani,aria.klucewicz,arild.valderhaug,armin.yazdani,arnob.das,aron.wesley,artem.newell,arthur.lang,asako.takahashi,ashley.newcomb,ashley.powell,ashlynn.crisp,ashten.bontrager,audrey.giesbers,augusto.delvalle,austin.higley
+users:x:100:dmandel,gd.iyer,ggross,glen.sasek,jabramso,jblack,jbockelm,jesse.black,kimberly.janik,lliang,michael.ross2,michael.trigoboff,mike.noel,mtrigobo,ralph.carpenter,robert.martin4,wmorales
+liam.beckman@syccuxas01:~> groups
+students
+liam.beckman@syccuxas01:~> ls -l |cd ..
+liam.beckman@syccuxas01:/home/student> ls -l | grep liam.beckman
+drwx------  10 liam.beckman                 students      4096 Oct 23 22:08 liam.beckman
+liam.beckman@syccuxas01:/home/student> chmod 700 /home/student/liam.beckman
+liam.beckman@syccuxas01:/home/student> ls chmod 700 /home/student/liam.beckmanls -l | grep liam.beckman
+drwx------  10 liam.beckman                 students      4096 Oct 23 22:08 liam.beckman
+liam.beckman@syccuxas01:/home/student> logout
