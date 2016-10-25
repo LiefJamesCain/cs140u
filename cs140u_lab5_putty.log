@@ -1,0 +1,521 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2016.10.24 11:09:24 =~=~=~=~=~=~=~=~=~=~=~=
+login as: liam.beckman
+Using keyboard-interactive authentication.
+Password: 
+Last login: Sun Oct 23 23:00:56 2016 from 174-125-113-175.dyn.centurytel.net
+
+liam.beckman@syccuxas01:~> cp ~wmorales/awkerxercise/longfile ~
+liam.beckman@syccuxas01:~> cp ~wmorales/awkexercise/longfile ~ ~ ~ ~ ~ ~ ~ ~ ~w ~i ~n ~e ~l ~i ~s ~t ~
+liam.beckman@syccuxas01:~> la
+total 404
+drwx------   10 liam.beckman students   4096 Oct 24 11:10 .
+drwxr-xr-x 2196 root         root      53248 Oct 15 09:05 ..
+-rw-r--r--    1 liam.beckman students      0 Oct 23 23:28 AAAAA
+-rw-------    1 liam.beckman students   9518 Oct 24 01:44 .bash_history
+-rw-r--r--    1 liam.beckman students   1177 Oct 10  2014 .bashrc
+drwxr-xr-x    2 liam.beckman students   4096 Sep 27  2013 bin
+drwx------    2 liam.beckman students   4096 Sep 27  2013 .config
+-rwxrwxrwx    3 liam.beckman students    876 Oct 17 23:00 cs140u
+-rwxrwxrwx    3 liam.beckman students    876 Oct 17 23:00 data.txt
+drwx------    3 liam.beckman students   4096 Oct 17 20:51 Documents
+-rw-r--r--    1 liam.beckman students   1637 Sep 12  2014 .emacs
+-rw-------    1 liam.beckman students      4 Oct 23 22:07 f1
+-rw-------    1 liam.beckman students     13 Oct 23 22:08 f1nf2
+-rw-------    1 liam.beckman students      4 Oct 23 22:07 f2
+-rw-------    1 liam.beckman students      0 Oct 23 17:40 file
+drwxr-xr-x    2 liam.beckman students   4096 Sep 27  2013 .fonts
+-rw-r--r--    1 liam.beckman students     78 Oct 23 17:47 foobar.txt
+-rw-r--r--    1 liam.beckman students      0 Oct 23 17:45 foo.txt
+-rw-r--r--    1 liam.beckman students  18517 Nov 12  2014 .gnu-emacs
+-rw-r--r--    1 liam.beckman students    861 Sep 12  2014 .inputrc
+drwx------    2 liam.beckman students   4096 Oct 17 22:57 lab4
+drwx------    3 liam.beckman students   4096 Sep 26 17:29 .local
+-rw-------    1 liam.beckman students 205496 Oct 24 11:10 longfile
+-rw-------    1 liam.beckman students  10724 Oct 12 17:45 mbox
+-rw-rw-rw-    1 liam.beckman students      0 Oct 18 08:35 newfile
+-rw-r--r--    1 liam.beckman students   1028 Oct 10  2014 .profile
+drwxr-xr-x    2 liam.beckman students   4096 Nov  6  2013 public_html
+-rw-------    1 liam.beckman students      9 Oct 12 17:31 README.md
+-rw-r-----    1 liam.beckman students      0 Oct 23 17:40 sample
+drwxrwxrwx    2 liam.beckman students   4096 Oct 18 08:53 temp
+-rw-------    1 liam.beckman students      0 Oct 23 22:03 test.txt
+-rw-------    1 liam.beckman students   5415 Oct 23 22:08 .viminfo
+-rw-------    1 liam.beckman students    212 Oct 24 11:10 winelist
+-rw-r--r--    1 liam.beckman students   1940 Dec 16  2013 .xim.template
+-rwxr-xr-x    1 liam.beckman students   1112 Sep 27  2013 .xinitrc.template
+liam.beckman@syccuxas01:~> las
+AAAAA  cs140u    Documents  f1nf2  file        foo.txt  longfile  newfile      README.md  temp      winelist
+bin    data.txt  f1         f2     foobar.txt  lab4     mbox      public_html  sample     test.txt
+liam.beckman@syccuxas01:~> ls -t
+winelist  AAAAA  f2  test.txt    foo.txt  file  newfile  data.txt  Documents  README.md    bin
+longfile  f1nf2  f1  foobar.txt  sample   temp  cs140u   lab4      mbox       public_html
+liam.beckman@syccuxas01:~> ls -lt
+total 268
+-rw------- 1 liam.beckman students    212 Oct 24 11:10 winelist
+-rw------- 1 liam.beckman students 205496 Oct 24 11:10 longfile
+-rw-r--r-- 1 liam.beckman students      0 Oct 23 23:28 AAAAA
+-rw------- 1 liam.beckman students     13 Oct 23 22:08 f1nf2
+-rw------- 1 liam.beckman students      4 Oct 23 22:07 f2
+-rw------- 1 liam.beckman students      4 Oct 23 22:07 f1
+-rw------- 1 liam.beckman students      0 Oct 23 22:03 test.txt
+-rw-r--r-- 1 liam.beckman students     78 Oct 23 17:47 foobar.txt
+-rw-r--r-- 1 liam.beckman students      0 Oct 23 17:45 foo.txt
+-rw-r----- 1 liam.beckman students      0 Oct 23 17:40 sample
+-rw------- 1 liam.beckman students      0 Oct 23 17:40 file
+drwxrwxrwx 2 liam.beckman students   4096 Oct 18 08:53 temp
+-rw-rw-rw- 1 liam.beckman students      0 Oct 18 08:35 newfile
+-rwxrwxrwx 3 liam.beckman students    876 Oct 17 23:00 cs140u
+-rwxrwxrwx 3 liam.beckman students    876 Oct 17 23:00 data.txt
+drwx------ 2 liam.beckman students   4096 Oct 17 22:57 lab4
+drwx------ 3 liam.beckman students   4096 Oct 17 20:51 Documents
+-rw------- 1 liam.beckman students  10724 Oct 12 17:45 mbox
+-rw------- 1 liam.beckman students      9 Oct 12 17:31 README.md
+drwxr-xr-x 2 liam.beckman students   4096 Nov  6  2013 public_html
+drwxr-xr-x 2 liam.beckman students   4096 Sep 27  2013 bin
+liam.beckman@syccuxas01:~> vi winelist
+  "winelist" 10L, 212C1980    13.99   Bad stuff
+1976    7.50    Chateau St. Jean
+1979    7.75    Chateau St. Jean
+1977    5.99    Charles Krug
+1967    6.75    Alexander Valley
+1977    6.99    Franciscan
+1977    8.00    Dry Creek
+1981    5.44    Cheap wine
+1999    4.99    Madeira wine
+
+~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                ~                                                                                                                1,1All:wqliam.beckman@syccuxas01:~> vi longfile
+  "longfile" 5604L, 205496CReceived: from winterpark.ch2m.com (winterpark.ch2m.com [198.91.8.25])by info.ox.ac.uk (8.8.8/8.8.8) with ESMTP id RAA15064Wed, 31 Dec 1997 17:49:58 GMT
+Received: by winterpark.ch2m.com with Internet Mail Service (5.0.1458.49)id <ZRLZ8JZM>; Wed, 31 Dec 1997 10:49:51 -0700
+Message-ID: <C7E45FE2A491D011BBC300805FEA99FC45A699@pc4674.ch2m.com>
+From: "Linder, Jann/WDC" <jlinder@CH2M.com>
+To: Mr Arlington Hewes <tpcadmin@info.tpc.int>
+Cc: "tpc-rp@info.tpc.int" <tpc-pc@info.tpc.int>
+Subject: RE: Weekly Sinkhole Report
+Date: Wed, 31 Dec 1997 10:50:06 -0700
+X-Priority: 1
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.0.1458.49)
+Content-Type: text/plain;charset="iso-8859-1"
+Sender: owner-tpc-pc@info.tpc.int
+Precedence: bulk
+
+I would like to cover the arizona 520 area code and have a few
+questions.
+
+My parents' company would actually be running the server and are willing
+to service all of the 520 area code, IF we can get the following
+working:
+
+I would actually like to allow people to email to a phone number and
+automatically have my program check that email box and fax to that phone
+number in the email address (ie: 1520xyz1234@golfbydesign.org).
+
+Is this possible? one.
+
+For instance:  If they emailed to 1520xyz1234@golfbydesign.org, the
+email would get picked up by my popg (faxhq program) daemon, see that
+the address was 520xyz1234 and fax it to 520xyz1234. (a hardcoded fax
+number that could also be used as an email address)
+
+Rather than having the customer have to format their email to in the
+standard tpc format (nice for us techies...but it ticks off customers).
+
+a real fast answer is appreciated.
+Is this possible to do while still running a cell?
+
+Jann
+
+
+> -----Original Message-----
+> From: Mr Arlington Hewes [SMTP:tpcadmin@info.tpc.int]
+> Sent: Thursday, December 11, 1997 7:00 AM
+> To:   tpc-rp@info.tpc.int
+> Subject:      Weekly Sinkhole Report
+>
+> You will find attached the weekly report from the sinkhole.  When
+> people attempt to send a mesage in the tpc.int domain that is not1,1Top2,1-83,1  4,1-85,1  678910,112345,1-86,1  78,0-19,1  201,0-12,1  345,0-16,1  789,0-130,1  1,0-12,1  3456,0-17,1  89,0-140,1  12,0-13,1  4,0-156,1  78950123
+> being handled by a remote printer server, the DNS routes that54,10%
+> message to sinkhole.tpc.int.  Once a week, we post a message55,10%
+> to the tpc.int community which summarizes the areas people were56,10%
+> trying to reach which do not currently have a server.57,10%
+>58,10%
+> Perhaps you know somebody who could serve one of these areas?59,10%
+>60,10%
+>1attempt(s): +1-005-29861,10%
+>1attempt(s): +1-008-86262,10%
+>1attempt(s): +1-011-28163,10%
+>2attempt(s): +1-049-55564,10%
+>1attempt(s): +1-052-2165,10%
+>1attempt(s): +1-114-41266,10%
+>1attempt(s): +1-123-56267,10%
+>1attempt(s): +1-126-39768,10%
+>1attempt(s): +1-132-43069,10%
+>1attempt(s): +1-142-22970,10%
+>1attempt(s): +1-144-12271,10%
+>1attempt(s): +1-144-16172,10%
+>4attempt(s): +1-145-20273,10%
+>1attempt(s): +1-146-25174,10%
+>1attempt(s): +1-159-42075,10%
+>1attempt(s): +1-161-39976,10%
+>1attempt(s): +1-161-43677,10%
+>1attempt(s): +1-191-33278,10%
+>2attempt(s): +1-191-41679,10%
+>1attempt(s): +1-191-65180,10%
+>1attempt(s): +1-201-20081,10%
+>1attempt(s): +1-201-21682,10%
+>1attempt(s): +1-201-21783,10%
+>1attempt(s): +1-201-23984,10%
+>1attempt(s): +1-201-26285,10%
+>5attempt(s): +1-201-26786,10%
+>1attempt(s): +1-201-33087,10%
+>2attempt(s): +1-201-34888,10%
+>2attempt(s): +1-201-35789,10%
+>1attempt(s): +1-201-38490,10%
+>1attempt(s): +1-201-39291,10%
+>1attempt(s): +1-201-39392,10%
+>1attempt(s): +1-201-40293,10%
+>2attempt(s): +1-201-43494,10%
+>1attempt(s): +1-201-43795,10%
+>1attempt(s): +1-201-46196,10%
+>1attempt(s): +1-201-47197,10%
+>1attempt(s): +1-201-48898,10%
+>1attempt(s): +1-201-48999,10%
+>1attempt(s): +1-201-507100,10%
+>1attempt(s): +1-201-531101,10%
+>1attempt(s): +1-201-567102,10%
+>2attempt(s): +1-201-575103,10%
+>2attempt(s): +1-201-595104,10%
+>2attempt(s): +1-201-616105,10%
+>1attempt(s): +1-201-628106,10%
+>1attempt(s): +1-201-653107,10%
+>2attempt(s): +1-201-694108,10%
+>1attempt(s): +1-201-751109,11%
+>4attempt(s): +1-201-767110,11%
+>2attempt(s): +1-201-768111,11%
+>1attempt(s): +1-201-791112,11%
+>1attempt(s): +1-201-794113,11%
+>1attempt(s): +1-201-796114,11%
+>4attempt(s): +1-201-798115,11%
+>1attempt(s): +1-201-808116,11%
+>1attempt(s): +1-201-825117,11%
+>1attempt(s): +1-201-836118,11%
+>1attempt(s): +1-201-842119,11%
+>2attempt(s): +1-201-845120,11%
+>2attempt(s): +1-201-865121,11%
+>2attempt(s): +1-201-866122,11%
+>2attempt(s): +1-201-867123,11%
+>4attempt(s): +1-201-907124,11%
+>1attempt(s): +1-201-933125,11%
+>3attempt(s): +1-201-934126,11%
+>1attempt(s): +1-201-941127,11%
+>1attempt(s): +1-201-962128,11%
+>1attempt(s): +1-201-967129,11%
+>1attempt(s): +1-201-984130,11%
+>1attempt(s): +1-201-986131,11%
+>1attempt(s): +1-201-989132,11%
+>1attempt(s): +1-201-998133,11%
+>2attempt(s): +1-203-254134,11%
+>1attempt(s): +1-203-322135,11%
+>1attempt(s): +1-203-324136,11%
+>1attempt(s): +1-203-348137,11%
+>1attempt(s): +1-203-358138,11%
+>1attempt(s): +1-203-372139,11%
+>1attempt(s): +1-203-386140,11%
+>1attempt(s): +1-203-453141,11%
+>1attempt(s): +1-203-731142,11%
+>2attempt(s): +1-203-785143,11%
+>1attempt(s): +1-203-840144,11%
+>2attempt(s): +1-203-972145,11%
+>1attempt(s): +1-204-832146,11%
+>1attempt(s): +1-204-888147,11%
+>1attempt(s): +1-205-226148,11%
+>1attempt(s): +1-205-233149,11%
+>4attempt(s): +1-205-251150,11%
+>1attempt(s): +1-205-252151,11%
+>1attempt(s): +1-205-349152,11%
+>2attempt(s): +1-205-362153,11%
+>1attempt(s): +1-205-366154,11%
+>1attempt(s): +1-205-430155,11%
+>1attempt(s): +1-205-755156,11%
+>1attempt(s): +1-205-859157,11%
+>1attempt(s): +1-205-951158,11%
+>1attempt(s): +1-206-224159,11%
+>1attempt(s): +1-206-236160,11%
+>5attempt(s): +1-206-272161,11%
+>1attempt(s): +1-206-286162,11%
+>1attempt(s): +1-206-303163,11%
+>1attempt(s): +1-206-344164,11%
+>1attempt(s): +1-206-364165,12%
+>1attempt(s): +1-206-374166,12%
+>1attempt(s): +1-206-481167,12%
+>1attempt(s): +1-206-485168,12%
+>5attempt(s): +1-206-487169,12%
+>3attempt(s): +1-206-488170,12%
+>1attempt(s): +1-206-489171,12%
+>1attempt(s): +1-206-512172,12%
+>1attempt(s): +1-206-543173,12%
+>1attempt(s): +1-206-583174,12%
+>2attempt(s): +1-206-603175,12%
+>1attempt(s): +1-206-628176,12%
+>1attempt(s): +1-206-644177,12%
+>1attempt(s): +1-206-654178,12%
+>1attempt(s): +1-206-748179,12%
+>1attempt(s): +1-206-767180,12%
+>1attempt(s): +1-206-782181,12%
+>2attempt(s): +1-206-822182,12%
+>1attempt(s): +1-206-870183,12%
+>1attempt(s): +1-207-326184,12%
+>1attempt(s): +1-207-938185,12%
+>1attempt(s): +1-207-948186,12%
+>1attempt(s): +1-208-368187,12%
+>3attempt(s): +1-208-395188,12%
+>1attempt(s): +1-208-463189,12%
+>1attempt(s): +1-209-466190,12%
+>1attempt(s): +1-209-478191,12%
+>1attempt(s): +1-209-526192,12%
+>1attempt(s): +1-209-538193,12%
+>1attempt(s): +1-209-541194,12%
+>4attempt(s): +1-209-545195,12%
+>2attempt(s): +1-209-547196,12%
+>1attempt(s): +1-209-549197,12%
+>3attempt(s): +1-209-551198,12%
+>1attempt(s): +1-209-562199,12%
+>1attempt(s): +1-209-564200,12%
+>2attempt(s): +1-209-571201,12%
+>3attempt(s): +1-209-572202,12%
+>3attempt(s): +1-209-575203,12%
+>6attempt(s): +1-209-576204,12%
+>1attempt(s): +1-209-577205,12%
+>1attempt(s): +1-209-673206,12%
+>1attempt(s): +1-209-686207,12%
+>1attempt(s): +1-209-725208,12%
+>1attempt(s): +1-209-782209,12%
+>1attempt(s): +1-209-787210,12%
+>1attempt(s): +1-210-232211,12%
+>1attempt(s): +1-210-238212,12%
+>1attempt(s): +1-210-242213,12%
+>1attempt(s): +1-210-246214,12%
+>5attempt(s): +1-210-308215,12%
+>3attempt(s): +1-210-523216,12%
+>1attempt(s): +1-210-544217,12%
+>1attempt(s): +1-210-567218,12%
+>1attempt(s): +1-210-896219,12%
+>1attempt(s): +1-213-251220,13%
+>1attempt(s): +1-213-256221,13%
+>1attempt(s): +1-213-265222,13%
+>1attempt(s): +1-213-277223,13%
+>1attempt(s): +1-213-383224,13%
+>1attempt(s): +1-213-385225,13%
+>1attempt(s): +1-213-386226,13%
+>1attempt(s): +1-213-387227,13%
+>2attempt(s): +1-213-389228,13%
+>1attempt(s): +1-213-463229,13%
+>1attempt(s): +1-213-481230,13%
+>1attempt(s): +1-213-483231,13%
+>1attempt(s): +1-213-623232,13%
+>4attempt(s): +1-213-629233,13%
+>1attempt(s): +1-213-650234,13%
+>1attempt(s): +1-213-688235,13%
+>6attempt(s): +1-213-689236,13%
+>1attempt(s): +1-213-725237,13%
+>1attempt(s): +1-213-740238,13%
+>1attempt(s): +1-213-747239,13%
+>3attempt(s): +1-213-748240,13%
+>1attempt(s): +1-213-759241,13%
+>1attempt(s): +1-213-851242,13%
+>1attempt(s): +1-213-871243,13%
+>1attempt(s): +1-213-930244,13%
+>2attempt(s): +1-213-935245,13%
+>1attempt(s): +1-213-977246,13%
+>1attempt(s): +1-214-233247,13%
+>5attempt(s): +1-214-242248,13%
+>1attempt(s): +1-214-257249,13%
+>1attempt(s): +1-214-302250,13%
+>1attempt(s): +1-214-331251,13%
+>1attempt(s): +1-214-349252,13%
+>1attempt(s): +1-214-352253,13%
+>1attempt(s): +1-214-404254,13%
+>2attempt(s): +1-214-528255,13%
+>1attempt(s): +1-214-665256,13%
+>1attempt(s): +1-214-721257,13%
+>2attempt(s): +1-214-969258,13%
+>1attempt(s): +1-214-979259,13%
+>1attempt(s): +1-215-204260,13%
+>1attempt(s): +1-215-248261,13%
+>1attempt(s): +1-215-374262,13%
+>2attempt(s): +1-215-387263,13%
+>1attempt(s): +1-215-448264,13%
+>1attempt(s): +1-215-545265,13%
+>1attempt(s): +1-215-568266,13%
+>1attempt(s): +1-215-638267,13%
+>1attempt(s): +1-215-641268,13%
+>1attempt(s): +1-215-671269,13%
+>1attempt(s): +1-215-682270,13%
+>1attempt(s): +1-215-736271,13%
+>1attempt(s): +1-215-743272,13%
+>1attempt(s): +1-215-875273,13%
+>1attempt(s): +1-215-877274,13%
+>1attempt(s): +1-215-895275,13%
+>1attempt(s): +1-215-938276,14%
+>1attempt(s): +1-215-968277,14%
+>1attempt(s): +1-215-997278,14%
+>1attempt(s): +1-216-231279,14%
+>2attempt(s): +1-216-241280,14%
+>1attempt(s): +1-216-243281,14%
+>1attempt(s): +1-216-252282,14%
+>2attempt(s): +1-216-280283,14%
+>1attempt(s): +1-216-329284,14%
+>1attempt(s): +1-216-352285,14%
+>1attempt(s): +1-216-381286,14%
+>3attempt(s): +1-216-405287,14%
+>1attempt(s): +1-216-416288,14%
+>1attempt(s): +1-216-642289,14%
+>2attempt(s): +1-216-656290,14%
+>1attempt(s): +1-216-771291,14%
+>1attempt(s): +1-216-826292,14%
+>2attempt(s): +1-216-861293,14%
+>1attempt(s): +1-217-431294,14%
+>1attempt(s): +1-217-442295,14%
+>1attempt(s): +1-217-528296,14%
+>1attempt(s): +1-217-854297,14%
+>1attempt(s): +1-218-326298,14%
+>2attempt(s): +1-218-723299,14%
+>1attempt(s): +1-218-724300,14%
+>1attempt(s): +1-218-776301,14%
+>1attempt(s): +1-219-237302,14%
+>1attempt(s): +1-219-425303,14%
+>1attempt(s): +1-219-458304,14%
+>1attempt(s): +1-219-473305,14%
+>1attempt(s): +1-219-842306,14%
+>1attempt(s): +1-221-212307,14%
+>1attempt(s): +1-228-521308,14%
+>4attempt(s): +1-230-987309,14%
+>1attempt(s): +1-232-324310,14%
+>3attempt(s): +1-232-342311,14%
+>1attempt(s): +1-233-249312,14%
+>1attempt(s): +1-233-434313,14%
+>1attempt(s): +1-234-314,14%
+>1attempt(s): +1-234-567315,14%
+>1attempt(s): +1-242-573316,14%
+>1attempt(s): +1-245-478317,14%
+>1attempt(s): +1-246-420318,14%
+>1attempt(s): +1-248-399319,14%
+>1attempt(s): +1-248-478320,14%
+>1attempt(s): +1-248-540321,14%
+>1attempt(s): +1-248-541322,14%
+>3attempt(s): +1-248-585323,14%
+>1attempt(s): +1-248-619324,14%
+>1attempt(s): +1-248-740325,14%
+>1attempt(s): +1-250-478326,14%
+>1attempt(s): +1-250-656327,14%
+>1attempt(s): +1-253-593328,14%
+>1attempt(s): +1-253-812329,14%
+>1attempt(s): +1-268-460330,14%
+>1attempt(s): +1-282-416331,15%
+>1attempt(s): +1-301-252332,15%
+>1attempt(s): +1-301-376333,15%
+>1attempt(s): +1-301-540334,15%
+>1attempt(s): +1-301-621335,15%
+>1attempt(s): +1-301-792336,15%
+>1attempt(s): +1-302-239337,15%
+>1attempt(s): +1-302-328338,15%
+>1attempt(s): +1-302-479339,15%
+>1attempt(s): +1-302-739340,15%
+>1attempt(s): +1-302-764341,15%
+>1attempt(s): +1-303-292342,15%
+>1attempt(s): +1-303-338343,15%
+>1attempt(s): +1-303-426344,15%
+>1attempt(s): +1-303-428345,15%
+>1attempt(s): +1-303-492346,15%
+>1attempt(s): +1-303-541347,15%
+>2attempt(s): +1-303-545348,15%
+>1attempt(s): +1-303-628349,15%
+>1attempt(s): +1-303-733350,15%
+>1attempt(s): +1-303-759351,15%
+>1attempt(s): +1-303-776352,15%
+>1attempt(s): +1-303-781353,15%
+>1attempt(s): +1-303-790354,15%
+>1attempt(s): +1-303-969355,15%
+>1attempt(s): +1-304-233356,15%
+>1attempt(s): +1-304-253357,15%
+>1attempt(s): +1-304-353358,15%
+>3attempt(s): +1-306-384359,15%
+>3attempt(s): +1-306-665360,15%
+>1attempt(s): +1-306-956361,15%
+>1attempt(s): +1-309-829362,15%
+>4attempt(s): +1-310-202363,15%
+>1attempt(s): +1-310-206364,15%
+>1attempt(s): +1-310-214365,15%
+>5attempt(s): +1-310-216366,15%
+>1attempt(s): +1-310-233367,15%
+>1attempt(s): +1-310-246368,15%
+>1attempt(s): +1-310-248369,15%
+>1attempt(s): +1-310-278370,15%
+>1attempt(s): +1-310-284371,15%
+>1attempt(s): +1-310-289372,15%
+>1attempt(s): +1-310-320373,15%
+>1attempt(s): +1-310-324374,15%
+>3attempt(s): +1-310-327375,15%
+>1attempt(s): +1-310-399376,15%
+>2attempt(s): +1-310-443377,15%
+>2attempt(s): +1-310-451378,15%
+>4attempt(s): +1-310-468379,15%
+>2attempt(s): +1-310-471380,15%
+>1attempt(s): +1-310-498381,15%
+>1attempt(s): +1-310-513382,15%
+>3attempt(s): +1-310-516383,15%
+>2attempt(s): +1-310-523384,15%
+>1attempt(s): +1-310-526385,15%
+>2attempt(s): +1-310-532386,15%
+>4attempt(s): +1-310-534387,16%
+>1attempt(s): +1-310-539388,16%
+>2attempt(s): +1-310-540389,16%
+>1attempt(s): +1-310-541390,16%
+>2attempt(s): +1-310-542391,16%
+>1attempt(s): +1-310-556392,16%
+>1attempt(s): +1-310-557393,16%
+>2attempt(s): +1-310-590394,16%
+>1attempt(s): +1-310-615395,16%
+>2attempt(s): +1-310-639396,16%
+>1attempt(s): +1-310-640397,16%
+>2attempt(s): +1-310-643398,16%
+>1attempt(s): +1-310-652399,16%
+>1attempt(s): +1-310-665400,16%
+>1attempt(s): +1-310-763401,16%
+>1attempt(s): +1-310-781402,16%
+>1attempt(s): +1-310-782403,16%
+>      15attempt(s): +1-310-820404,16%
+>1attempt(s): +1-310-998405,16%
+>1attempt(s): +1-313-176406,16%
+>2attempt(s): +1-313-222407,16%
+>1attempt(s): +1-313-259408,16%
+>1attempt(s): +1-313-271409,16%
+>2attempt(s): +1-313-291410,16%
+>2attempt(s): +1-313-292411,16%
+>1attempt(s): +1-313-295412,16%
+>1attempt(s): +1-313-323413,16%
+>1attempt(s): +1-313-335414,16%
+>1attempt(s): +1-313-390415,16%
+>1attempt(s): +1-313-422416,16%
+>2attempt(s): +1-313-429417,16%
+>1attempt(s): +1-313-453418,16%
+>1attempt(s): +1-313-483419,16%
+>1attempt(s): +1-313-581420,16%
+>1attempt(s): +1-313-584421,16%
+>3attempt(s): +1-313-596422,16%
+>2attempt(s): +1-313-677423,16%
+>1attempt(s): +1-313-761424,16%
+>1attempt(s): +1-313-864425,16%
+>2attempt(s): +1-313-872426,16%
+>1attempt(s): +1-313-894427,16%
+>1attempt(s): +1-313-946428,16%
+>1attempt(s): +1-313-961429,16%
+>2attempt(s): +1-313-994430,16%
+>1attempt(s): +1-314-231431,16%
+>1attempt(s): +1-314-259432,16%
+>2attempt(s): +1-314-275433,16%
+>1attempt(s): +1-314-291434,16%
+>1attempt(s): +1-314-298435,16%
+>1attempt(s): +1-314-342436,16%
+>1attempt(s): +1-314-421437,16%
+>1attempt(s): +1-314-426438,16%:qliam.beckman@syccuxas01:~> logout
