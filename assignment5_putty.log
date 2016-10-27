@@ -1,0 +1,97 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2016.10.26 16:29:59 =~=~=~=~=~=~=~=~=~=~=~=
+login as: liam.beckman
+Using keyboard-interactive authentication.
+Password: 
+Last login: Wed Oct 26 16:29:18 2016 from 174-125-113-175.dyn.centurytel.net
+
+liam.beckman@syccuxas01:~> 
+liam.beckman@syccuxas01:~> 
+liam.beckman@syccuxas01:~> 
+liam.beckman@syccuxas01:~> 
+liam.beckman@syccuxas01:~>     John    Doe     3.54    ECE
+If 'John' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf John
+liam.beckman@syccuxas01:~>     James   Davis    3.71    ECE
+If 'James' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf James
+liam.beckman@syccuxas01:~>     Al      Davis    2.63    CS
+    Sunil   Raj     3.36    ECE
+    Charles Right   3.31    EECS
+    Diane   Rover   3.87    ECE
+    Aziz    Inan    3.75    EECS
+    Lu      John    3.06    CS
+    Lee     Chow    3.74    EE
+    Adam    Giles   2.54    SS
+    Andy    John    3.98    EECSIf 'Al' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf Al
+liam.beckman@syccuxas01:~>     Ahmad   Rashid  3.74    MBA
+If 'Ahmad' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf Ahmad
+liam.beckman@syccuxas01:~>     Sam     Chu      3.68    ECE
+If 'Sam' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf Sam
+liam.beckman@syccuxas01:~>     Arun    Roy      3.06    SS
+If 'Arun' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf Arun
+liam.beckman@syccuxas01:~>     Rick    Marsh   2.34    CS
+If 'Rick' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf Rick
+liam.beckman@syccuxas01:~>     James   Adam    2.77    CS
+If 'James' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf James
+liam.beckman@syccuxas01:~>     Art     Pohm    4.00    ECE
+If 'Art' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf Art
+liam.beckman@syccuxas01:~>     John    Clark    2.68    ECE
+If 'John' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf John
+liam.beckman@syccuxas01:~>     Nabeel  Ali     3.56    EE
+If 'Nabeel' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf Nabeel
+liam.beckman@syccuxas01:~>     Tom     Nelson  3.81    ECE
+If 'Tom' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf Tom
+liam.beckman@syccuxas01:~>     Pat     King    2.77    SS
+If 'Pat' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf Pat
+liam.beckman@syccuxas01:~>     Jake    Zulu    3.00    CS
+If 'Jake' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf Jake
+liam.beckman@syccuxas01:~>     John    Lee     2.64    EE
+If 'John' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf John
+liam.beckman@syccuxas01:~>     Sunil   Raj     3.36    ECE
+If 'Sunil' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf Sunil
+liam.beckman@syccuxas01:~>     Charles Right   3.31    EECS
+If 'Charles' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf Charles
+liam.beckman@syccuxas01:~>     Diane   Rover   3.87    ECE
+If 'Diane' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf Diane
+liam.beckman@syccuxas01:~>     Aziz    Inan    3.75    EECS
+If 'Aziz' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf Aziz
+liam.beckman@syccuxas01:~>     Lu      John    3.06    CS
+If 'Lu' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf Lu
+liam.beckman@syccuxas01:~>     Lee     Chow    3.74    EE
+If 'Lee' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf Lee
+liam.beckman@syccuxas01:~>     Adam    Giles   2.54    SS
+If 'Adam' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf Adam
+liam.beckman@syccuxas01:~>     Andy    John    3.98    EECS
+If 'Andy' is not a typo you can use command-not-found to lookup the package that contains it, like this:
+    cnf Andy
+liam.beckman@syccuxas01:~> vi
+  ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               ~                                                                               0,0-1AllVIM - Vi IMprovedversion 7.4.52by Bram Moolenaar et al.Vim is open source and freely distributableSponsor Vim development!type  :help sponsor<Enter>    for information type  :q<Enter>               to exit         type  :help<Enter>  or  <F1>  for on-line helptype  :help version7<Enter>   for version info-- INSERT --2,1Allhn    Doe     3.54    ECE
+    James   Davis    3.71    ECE    Al      Davis    2.63    CS    Ahmad   Rashid  3.74    MBA    Sam     Chu      3.68    ECE    Arun    Roy      3.06    SS    Rick    Marsh   2.34    CS    James   Adam    2.77    CS    Art     Pohm    4.00    ECE    John    Clark    2.68    ECE    Nabeel  Ali     3.56    EE    Tom     Nelson  3.81    ECE    Pat     King    2.77    SS    Jake    Zulu    3.00    CS    John    Lee     2.64    EE    Sunil   Raj     3.36    ECE    Charles Right   3.31    EECS    Diane   Rover   3.87    ECE    Aziz    Inan    3.75    EECS    Lu      John    3.06    CS    Lee     Chow    3.74    EE    Adam    Giles   2.54    SS    Andy    John    3.98    EECS4,33Bot24,32Bot:qE37: No write since last change (add ! to override)24,32Bot:q!liam.beckman@syccuxas01:~> cd Documents/cs140u
+liam.beckman@syccuxas01:~/Documents/cs140u> ;s
+-bash: syntax error near unexpected token `;'
+liam.beckman@syccuxas01:~/Documents/cs140u> ls
+assignment4_studentList.txt  cs140u_test.txt       week3answers.txt
+cs140u_assignment1.txt       Documents             week3_vi_answers.txt
+cs140u_lab2_puttyLog.txt     Lab 1 submission.txt
+cs140u_lab2.txt              week3answers
+liam.beckman@syccuxas01:~/Documents/cs140u> 

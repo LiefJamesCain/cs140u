@@ -1,0 +1,12 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2016.10.26 16:27:15 =~=~=~=~=~=~=~=~=~=~=~=
+login as: liam.beckman
+Using keyboard-interactive authentication.
+Password: 
+Access denied
+Using keyboard-interactive authentication.
+Password: 
+Last failed login: Wed Oct 26 16:27:41 PDT 2016 from 174-125-113-175.dyn.centurytel.net on ssh:notty
+There was 1 failed login attempt since the last successful login.
+Last login: Mon Oct 24 15:51:31 2016 from 173.241.172.16
+
+liam.beckman@syccuxas01:~> ^V

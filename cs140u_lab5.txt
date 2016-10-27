@@ -1,24 +1,6 @@
 your name:---- liam beckman (G03891154)
-date: -------- 24 october 2016 monday
+date: -------- 26 october 2016 wednesday
 Lab number: -- 5
-
-
-Find the answers, using awk, for the following statements; you will get extra points for each correct answer. Points will be given only if 100% correct. These awk commands are just one line long each.
-
-DO NOT SHARE YOUR ANSWERS, THIS IS EXTRA CREDIT, THAT MEANS INDIVIDUAL EFFORT. You have 2 hours to complete this task or complete it prior to the official lab meeting and upload your answers to the "Lab 5 submission" dropbox.
-
-Hint: you may consult your notes and the Web if necessary.
-
-You will be doing your awk searches on a file called longfile and winelist. To obtain these files use the command:
-
-yourid@syccuxfs01:~> cp ~wmorales/awkexercise/longfile ~ 
-
-and
-
-yourid@syccuxfs01:~> cp ~wmorales/awkexercise/winelist ~    (there is a space before ~, remember ~ is your home directory)
-		
-This will copy the two files that you will need for this exercise to your home directory.
-
 
 -----------------------------------------
 -----------------------------------------
@@ -35,7 +17,10 @@ server, or at least to a "randomly" selected one of the servers covering
 
 YOUR AWK COMMAND:
 
-gawk '/selected/' longfile
+> awk '/selected/' longfile
+
+server, or at least to a "randomly" selected one of the servers covering
+
  
 -----------------------------------------
 -----------------------------------------
@@ -47,14 +32,10 @@ gawk '/selected/' longfile
 2) Write the command that would find all lines that have an email address and place a label email = before the line in the file longfile
 
  
-
 output will multiple lines similar to this one :
-
  
-
 email= Message-Id: 199801232015.MAA21444@mail-gw2.pacbell.net
 
- 
 
 NOTE: this will be a long listing. The line above would not be a good example since 199801232015.MAA21444@mail-gw2.pacbell.netwould not be a valid email address. You would be searching for lines with the words from: to: Cc:, usually after these characters, there could be a good, valid e-mail address.
 
@@ -62,22 +43,28 @@ NOTE: this will be a long listing. The line above would not be a good example si
 
 YOUR AWK COMMAND:
 
-gawk {print "email= "} '/from:, to:, Cc:/' longfile
- 
+> awk '/[Ff]rom:/||/[Tt]o:/||/[Cc]c:/ {print "email= ", $0}' longfile
+
+email=  From: "Linder, Jann/WDC" <jlinder@CH2M.com>
+email=  To: Mr Arlington Hewes <tpcadmin@info.tpc.int>
+email=  Cc: "tpc-rp@info.tpc.int" <tpc-pc@info.tpc.int>
+email=  > From:	Mr Arlington Hewes [SMTP:tpcadmin@info.tpc.int]
+email=  > To:	tpc-rp@info.tpc.int
+email=  From: The.Internet.People@usa.net
+email=  To: John Hamill <jhamill@ibm.net>
+...
+...
+...
+
 -----------------------------------------
 -----------------------------------------
 
 (3 points - easy)
 
- 
 
 3)Write the awk command that would show the user wmorales (or yourself) that is online (you have to use a pipe)
 
- 
-
 Output, depending on the system, would be similar to:
-
- 
 
 $ wmorales pts/0 192.220.32.72 4:18pm 0.00s 0.07s 0.02s w
 
@@ -85,15 +72,22 @@ $ wmorales pts/0 192.220.32.72 4:18pm 0.00s 0.07s 0.02s w
 
 YOUR AWK COMMAND:
 
-who | gawk '/wmorales/'
+> w | awk '/liam.bec/'   #ME
+
+liam.bec pts/176  174-125-113-175. 17:59    2.00s  0.95s  0.00s w
+
+
+> w | awk '/wmorales/'   #YOU
+
+wmorales pts/212  73.96.168.255    19:38    8:00   0.06s  0.06s -bash
+
+
 
 -----------------------------------------
 -----------------------------------------
 
 (10 points hard one) -
 
- 
-r
 4) finger the users on our system that have the letter r in their first name, or last name, but nowhere else. Note also that the r can be r or R.
 
  The output of the finger command has changed, so, this will be a bit more difficult to get it done. So, I am looking for the use field search. This might give you some ideas 
@@ -104,7 +98,6 @@ Look at how to use field separators
 
 Output would be similar to:
 
- 
 
 tring Tong Ring 4 church (helix.cse.ogi.edu)
 
@@ -112,7 +105,6 @@ tzhou Roger Ring 0:15 p2 helix (zephyr.cse.ogi.e)
 
 zab Rachu Brown 1:40 p7 bogart (sampo.grumblesmu)
 
- 
 
 note: the letter r or R has to appear either in their first name or last name only, not on the name of the machine that they are using if it happen to have r in it.
 
@@ -120,9 +112,20 @@ note: the letter r or R has to appear either in their first name or last name on
 
 YOUR AWK COMMAND:
 
-finger | gawk '$2 ~ /[rR]/ && $3 !~ /[rR]/ {print $1, $2, $6, $4, $3} 
 
-users | grep [rR] | finger -l
+> who | awk '$1 ~ /[rR]/ {printf "%-20s %s\t %s\t %s\t %s\n" , $1, $2, $3, $4, $5}'
+
+marcus.chalona       pts/44	 	 2016-09-30	 23:04	 (:1)
+george.gituri        pts/130	 2016-10-26	 18:22	 (10.31.130.49)
+brad.ostapkowicz     pts/133	 2016-10-26	 17:05	 (174-25-160-24.ptld.qwest.net)
+nathan.gazurian      pts/134	 2016-10-26	 18:50	 (174-25-177-76.ptld.qwest.net)
+ben.stewart1         pts/138	 2016-10-26	 18:45	 (c-71-193-233-51.hsd1.or.comcast.net)
+rutsuko.askew        pts/144	 2016-10-26	 16:06	 (c-73-25-39-205.hsd1.or.comcast.net)
+emily.becker3        pts/148	 2016-10-26	 17:17	 (c-50-186-53-210.hsd1.or.comcast.net)
+...
+...
+...
+
 
 -----------------------------------------
 ----------------------------------------- 
@@ -131,13 +134,8 @@ users | grep [rR] | finger -l
 
  
 
-from the file called winelist extract a list of wines that cost less then $7.00
-
- 
-
-output (it may be different depending the time you do it):
-
- 
+from the file called winelist extract a list of wines that cost less then $7.0
+output (it may be different depending the time you do it
 
 1977 6.99 Franciscan
 
@@ -149,4 +147,19 @@ output (it may be different depending the time you do it):
 
 YOUR AWK COMMAND:
 
-gawk '$2 < 7.00' winelist
+> awk '$2 < 7.00' winelist | sort -k 1   #SORTED BY YEAR
+
+1967	6.75	Alexander Valley
+1977	5.99	Charles Krug
+1977	6.99	Franciscan
+1981	5.44	Cheap wine
+1999	4.99	Madeira wine
+
+> awk '$2 < 7.00' winelist | sort -k 2   #SORTED BY COST
+
+1999	4.99	Madeira wine
+1981	5.44	Cheap wine
+1977	5.99	Charles Krug
+1967	6.75	Alexander Valley
+1977	6.99	Franciscan
+
