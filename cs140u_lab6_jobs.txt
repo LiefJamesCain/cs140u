@@ -1,0 +1,76 @@
+Instructions for Lab 6
+
+On the top of all your documents, always include these items:
+
+your name: liam
+date: 09 November 2016
+Lab number: 6
+
+Repeat the process that you used to save the log file that will be produced by this lab. You can either use the log feature on putty or the script command at the shell prompt.
+
+Login to our system and follow these steps while recording your session. Once your session has been recorded next to command prompt, describe what you just have done. i.e. :
+
+wmorales@syccuxfs01:~> ps                 << this command shows the running processes
+
+
+PID TTY         TIME CMD
+1257 pts/5   00:00:00 bash
+1596 pts/5   00:00:00 ps
+
+wmorales@syccuxas01:~>
+
+ 
+
+>>>>>>>>>>>>>>>> start here <<<<<<<<<<<<<<<<<
+
+$ (sleep 5; cat > mytext) &
+
+[1] 1343       <<< this number will be different than yours
+
+$ date             <<< type this quickly before the 5 seconds expire)
+
+Sun Dec 7 11:58:20 PST 2003
+
+[1]+ Stopped (tty input) ( sleep 5; cat >mytext )          <<<<< this may or may not show up on you system
+
+$ fg
+
+( sleep 5; cat >mytext )
+
+Remember to let the cat out!
+
+CONTROL-D
+
+cat the contents of mytext file
+ 
+
+$ ps ax
+
+$ ps –ef
+
+$ ps aux
+
+$ps –ef f
+
+$ ps -f -u wmorales
+
+$ ps aux --sort=-pcpu,+pmem
+
+$ ps aux --sort=-pcpu | head -5
+
+$ ps -f –-forest
+
+$ ps -e -o pid,uname,pcpu,pmem,comm
+
+$ ps -e -o pid,uname=USERNAME,pcpu=CPU_USAGE,pmem,comm
+
+$ ps -e -o pid,comm,etime
+
+$ watch -n 1 'ps -e -o pid,uname,cmd,pmem,pcpu --sort=-pmem,-pcpu | head -15'
+
+Start Date
+ 
+Nov 4, 2016 10:13 AM
+End Date
+ 
+Nov 9, 2016 9:00 PM:

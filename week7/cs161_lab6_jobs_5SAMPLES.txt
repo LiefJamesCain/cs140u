@@ -1,0 +1,198 @@
+your name: liam beckman (G03891154)
+date: 09 November 2016
+Lab number: 6
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+$ (sleep 5; cat > mytext) &      #sleep for 5 seconds and write to a file called mytext, both as background processes
+[1] 9899
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+$ date                            #output the current date
+Wed Nov  9 17:48:49 PST 2016
+
+[1]  + 9899 suspended (tty input)  ( sleep 5; cat > mytext; )
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+$ fg                             #bring the "cat > mytext" command to the foreground and write to the mytext file
+[1]  + 19526 continued  ( sleep 5; cat > mytext; )
+       
+Remember to let the cat out!
+<CTRL D>
+
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+$ cat mytext                      #output the newly written contents of mytext
+
+Remember to let the cat out!
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+$ ps ax         #(-a:) output all process information EXCEPT process group leaders and non-terminal processes, (-x:) output all process information for those without controlling terminals (hence the ? elements in the TTY column)
+
+  PID TTY      STAT   TIME COMMAND
+    1 ?        Ss    55:52 /sbin/init showopts
+    2 ?        S      0:01 [kthradd]
+    3 ?        S      0:29 [ksoftirqd/0]
+    5 ?        S<     0:00 [kworker/0:0H]
+    7 ?        S      0:41 [migration/0]
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+
+$ ps ax -ef        #[same actions as previous command] AND (-e:) output  process information for the processes currently in the process table, (-f:) displaying a "full" header (UID PID PPID C STIME TTY TIME CMD)
+
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 Jul23 ?        00:55:52 /sbin/init showopts
+root         2     0  0 Jul23 ?        00:00:01 [kthreadd]
+root         3     2  0 Jul23 ?        00:00:29 [ksoftirqd/0]
+root         5     2  0 Jul23 ?        00:00:00 [kworker/0:0H]
+root         7     2  0 Jul23 ?        00:00:41 [migration/0]
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+
+$ ps aux           #(-a:) output all processes for all users, (-u:) output the user/owner of the processes, (-x:) output the non-terminal processes as well
+
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.2  55432  8760 ?        Ss   Jul23  55:52 /sbin/init showopts
+root         2  0.0  0.0      0     0 ?        S    Jul23   0:01 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    Jul23   0:29 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   Jul23   0:00 [kworker/0:0H]
+root         7  0.0  0.0      0     0 ?        S    Jul23   0:41 [migration/0]
+
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+
+$  ps -ef f        #(-e:) output all processes, (-f:) output in full-format listing, (f:) and format the CMD elements in a hierarchy (similar to the <forest> command)
+
+UID        PID  PPID  C STIME TTY      STAT   TIME CMD
+root         2     0  0 Jul23 ?        S      0:01 [kthreadd]
+root         3     2  0 Jul23 ?        S      0:29  \_ [ksoftirqd/0]
+root         5     2  0 Jul23 ?        S<     0:00  \_ [kworker/0:0H]
+root         7     2  0 Jul23 ?        S      0:41  \_ [migration/0]
+root         8     2  0 Jul23 ?        S      0:00  \_ [rcuc/0]
+
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+
+$ ps -f -u liam.beckman            #(-f:) output processes in full-format listing for the (-u:) user liam.beckman
+
+UID            PID  PPID  C STIME TTY          TIME CMD
+liam.beckman  7815     1  0 Sep22 ?        00:00:00 /usr/lib/systemd/systemd --user     #System and service manager, first boot as PID 1 on startup
+liam.beckman  7831  7815  0 Sep22 ?        00:00:00 (sd-pam)           
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+
+$ ps aux --sort=-pcpu,+pmem        #(-a:) output all processes for all users, (-u:) output the user/owner of the processes, (-x:) output the non-terminal processes as well AND sort in descending order for percent CPU usage and in ascending order for the percent MEMORY usage.
+
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+aaron.r+ 14779  0.8  0.6  59848 25796 pts/104  S+   14:16   0:00 gdb ./main
+gdm       2938  0.8 18.6 2123160 758040 ?      Sl   Oct30 125:23 gnome-shell --mode=gdm
+root      1292  0.7  2.9 210752 121476 ?       S    Jul23 1171:22 python /usr/bin/denyhosts.py --daemon --config=/usr/share/denyhosts/denyhosts.cfg
+root      1619  0.4  0.2 277260 11648 ?        Ssl  Jul23 661:07 /usr/lib/accounts-daemon
+john.ne+ 10797  0.3  0.1  47108  5796 pts/164  S+   13:48   0:05 vi hashTable.cpp
+root       959  0.1  0.0 157064  1232 ?        Sl   Jul23 178:02 /usr/bin/vmtoolsd
+
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+
+$ ps aux --sort=-pcpu,+pmem | head  -5       #[same action as previous command] BUT sort the percent CPU usage in descending order and sort the percent memory usage in ascending order, AND only output the first 5 lines of the output.
+
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+gdm       2938  0.8 18.6 2123160 758216 ?      Sl   Oct30 125:23 gnome-shell --mode=gdm
+root      1292  0.7  2.9 210752 121476 ?       S    Jul23 1171:22 python /usr/bin/denyhosts.py --daemon --config=/usr/share/denyhosts/denyhosts.cfg
+aaron.r+ 14779  0.5  0.6  59848 25796 pts/104  S+   14:16   0:00 gdb ./main
+root      1619  0.4  0.2 277260 11648 ?        Ssl  Jul23 661:07 /usr/lib/accounts-daemon
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+$ ps -f --forest       #(-f:) output in full-format process listing with the --forest option, which formats the CMD elements in a hierarchial format. 
+
+UID        PID  PPID  C STIME TTY          TIME CMD
+liam.be+ 14620 14619  0 14:15 pts/120  00:00:00 -bash                 #our bourne again shell process
+liam.be+ 14824 14620 99 14:17 pts/120  00:00:00  \_ ps -f --forest    #The ps process we just executed
+liam.be+ 14825 14620  0 14:17 pts/120  00:00:00  \_ head
+
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+$ ps -e -o pid,uname,pcpu,pmem,comm          #(-e:) output ALL processes on the system, (-o:) outputs in a user-defined format with Process ID, User, Percent CPU Usage
+
+  PID USER     %CPU %MEM COMMAND
+    1 root      0.0  0.2 systemd              #Again, the system and service manager for our UNIX machine, first boot as PID 1 on startup
+    2 root      0.0  0.0 kthreadd
+    3 root      0.0  0.0 ksoftirqd/0
+    5 root      0.0  0.0 kworker/0:0H
+    7 root      0.0  0.0 migration/0
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+$ ps -e -o pid,uname=USERNAME,pcpu=CPU_USAGE,pmem,comm     #(-e:) output ALL processes on the system, (-o:) outputs in a user-defined format with Process ID, Username, Percent CPU Usage, Percent Memory Usage, and Command
+
+  PID USERNAME CPU_USAGE %MEM COMMAND
+    1 root           0.0  0.2 systemd        #The system and service manager for our UNIX machine, first boot as PID 1 on startup
+    2 root           0.0  0.0 kthreadd
+    3 root           0.0  0.0 ksoftirqd/0
+    5 root           0.0  0.0 kworker/0:0H
+    7 root           0.0  0.0 migration/0
+
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+$ ps -e -o pid,comm,etime       #(-e:) output ALL processes on the system, (-o:) outputs in a user-defined format with Process ID, Command, and Elapsed Time
+ 
+  PID COMMAND             ELAPSED
+    1 systemd         109-10:18:14           #The system and service manager for our UNIX machine, first boot as PID 1 on startup
+    2 kthreadd        109-10:18:14
+    3 ksoftirqd/0     109-10:18:14
+    5 kworker/0:0H    109-10:18:14
+    7 migration/0     109-10:18:14
+
+-------------------------------------------------------------------------
+-------------------------------------------------------------------------
+
+$ watch -n 1 'ps -e -o pid,uname,cmd,pmem,pcpu --sort=-pmem,-pcpu | head -15'        #(watch:) execute the ps command full screen, and have it (-n 1:) update every 1 second, (-e:) select ALL processes on the system, (-o:) outputs in a user-defined format (Process ID, User, Command, Percent Memory, Percent CPU), and SORT the Percent MEMORY usage in descending order, and sort the Percent CPU usage in descending order, and (head -15) only output the first 15 lines.
+
+Every 1.0s: ps -e -o pid,uname,cmd,pmem,pcpu --sort...  Wed Nov  9 14:20:06 2016
+  PID   USER        CMD                           %MEM  %CPU
+ 2938   root        gdmgnome-shell --mode=gdm     18.6  0.8
+ 1644   vscan       /usr/sbin/clamd               10.0  0.0
+ 1292   root        python /usr/bin/denyhosts.p   2.9   0.7
+ 1694   root        gdm-session-worker [pam/gdm   1.0   0.0
+  742   root        /usr/sbin/rsyslogd -n         0.9   0.0
+14978   aaron.r+    gdb ./main                    0.6   7.3
+ 5874   sky.mck+    /usr/bin/emacs-gtk main.cpp   0.4   0.0
+ 1619   root        /usr/lib/accounts-daemon      0.2   0.4
+  284   root        /usr/lib/systemd/systemd-jo   0.2   0.01     
+23061   andrew.+    (sd-pam)                      0.1   0.0
+ 9291   tanner.+    (sd-pam)                      0.1   0.0
+25149   sky.mck+    /usr/bin/emacs-gtk main.cpp   0.1   0.05
+ 7246   alex.bi+    vim main.h                    0.1   0.0   
+15059   aaron.r+    gdb ./main                    0.2   21.94 
+15059   aaron.r+    gdb ./main                    0.6   13.1
+
+
+

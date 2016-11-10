@@ -1,0 +1,175 @@
+=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2016.11.09 14:15:11 =~=~=~=~=~=~=~=~=~=~=~=
+login as: liam.beckman
+Using keyboard-interactive authentication.
+Password: 
+Last login: Wed Nov  9 14:12:11 2016 from 173.241.172.16
+
+
+liam.beckman@syccuxas01:~> ps ax 
+  PID TTY      STAT   TIME COMMAND
+    1 ?        Ss    55:52 /sbin/init showopts
+    2 ?        S      0:01 [kthradd]
+    3 ?        S      0:29 [ksoftirqd/0]
+    5 ?        S<     0:00 [kworker/0:0H]
+    7 ?        S      0:41 [migration/0]
+    8 ?        S      0:00 [rcuc/0]
+    9 ?        S      0:00 [rcub/0]
+   10 ?        R     20:42 [rcu_preempt]
+   11 ?        S     15:15 [rcuop/0]
+
+
+liam.beckman@syccuxas01:~> ps ax -ef
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 Jul23 ?        00:55:52 /sbin/init showopts
+root         2     0  0 Jul23 ?        00:00:01 [kthreadd]
+root         3     2  0 Jul23 ?        00:00:29 [ksoftirqd/0]
+root         5     2  0 Jul23 ?        00:00:00 [kworker/0:0H]
+root         7     2  0 Jul23 ?        00:00:41 [migration/0]
+root         8     2  0 Jul23 ?        00:00:00 [rcuc/0]
+root         9     2  0 Jul23 ?        00:00:00 [rcub/0]
+root        10     2  0 Jul23 ?        00:20:42 [rcu_preempt]
+root        11     2  0 Jul23 ?        00:15:15 [rcuop/0]
+
+
+liam.beckman@syccuxas01:~> ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.2  55432  8760 ?        Ss   Jul23  55:52 /sbin/init showopts
+root         2  0.0  0.0      0     0 ?        S    Jul23   0:01 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    Jul23   0:29 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   Jul23   0:00 [kworker/0:0H]
+root         7  0.0  0.0      0     0 ?        S    Jul23   0:41 [migration/0]
+root         8  0.0  0.0      0     0 ?        S    Jul23   0:00 [rcuc/0]
+root         9  0.0  0.0      0     0 ?        S    Jul23   0:00 [rcub/0]
+root        10  0.0  0.0      0     0 ?        S    Jul23  20:42 [rcu_preempt]
+root        11  0.0  0.0      0     0 ?        S    Jul23  15:15 [rcuop/0]
+
+
+liam.beckman@syccuxas01:~>  ps -ef f
+UID        PID  PPID  C STIME TTY      STAT   TIME CMD
+root         2     0  0 Jul23 ?        S      0:01 [kthreadd]
+root         3     2  0 Jul23 ?        S      0:29  \_ [ksoftirqd/0]
+root         5     2  0 Jul23 ?        S<     0:00  \_ [kworker/0:0H]
+root         7     2  0 Jul23 ?        S      0:41  \_ [migration/0]
+root         8     2  0 Jul23 ?        S      0:00  \_ [rcuc/0]
+root         9     2  0 Jul23 ?        S      0:00  \_ [rcub/0]
+root        10     2  0 Jul23 ?        S     20:42  \_ [rcu_preempt]
+root        11     2  0 Jul23 ?        S     15:15  \_ [rcuop/0]
+root        12     2  0 Jul23 ?        S     13:56  \_ [rcuop/1]
+
+
+liam.beckman@syccuxas01:~> ps -f -u wmorales
+UID        PID  PPID  C STIME TTY          TIME CMD
+wmorales  7815     1  0 Sep22 ?        00:00:00 /usr/lib/systemd/systemd --user
+wmorales  7831  7815  0 Sep22 ?        00:00:00 (sd-pam)           
+
+
+liam.beckman@syccuxas01:~> ps aux --sort=-pcpu,+pmem 
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+aaron.r+ 14779  0.8  0.6  59848 25796 pts/104  S+   14:16   0:00 gdb ./main
+gdm       2938  0.8 18.6 2123160 758040 ?      Sl   Oct30 125:23 gnome-shell --mode=gdm
+root      1292  0.7  2.9 210752 121476 ?       S    Jul23 1171:22 python /usr/bin/denyhosts.py --daemon --config=/usr/share/denyhosts/denyhosts.cfg
+root      1619  0.4  0.2 277260 11648 ?        Ssl  Jul23 661:07 /usr/lib/accounts-daemon
+john.ne+ 10797  0.3  0.1  47108  5796 pts/164  S+   13:48   0:05 vi hashTable.cpp
+root       959  0.1  0.0 157064  1232 ?        Sl   Jul23 178:02 /usr/bin/vmtoolsd
+jehnoy.+  7117  0.1  0.0  31328  2976 pts/162  T    12:58   0:05 ls -N --color=tty -T 0 -alR
+chris.m+ 21014  0.1  0.0  91400  3436 ?        S    09:07   0:23 sshd: chris.mcpherson@pts/196
+wayne.c+  9298  0.1  0.1  47096  5800 pts/167  S+   13:41   0:02 vi main.cpp
+
+
+liam.beckman@syccuxas01:~> ps aux --sort=-pcpu,+pmem | head  -5
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+gdm       2938  0.8 18.6 2123160 758216 ?      Sl   Oct30 125:23 gnome-shell --mode=gdm
+root      1292  0.7  2.9 210752 121476 ?       S    Jul23 1171:22 python /usr/bin/denyhosts.py --daemon --config=/usr/share/denyhosts/denyhosts.cfg
+aaron.r+ 14779  0.5  0.6  59848 25796 pts/104  S+   14:16   0:00 gdb ./main
+root      1619  0.4  0.2 277260 11648 ?        Ssl  Jul23 661:07 /usr/lib/accounts-daemon
+
+
+liam.beckman@syccuxas01:~> ps -f --forest
+UID        PID  PPID  C STIME TTY          TIME CMD
+liam.be+ 14620 14619  0 14:15 pts/120  00:00:00 -bash
+liam.be+ 14824 14620 99 14:17 pts/120  00:00:00  \_ ps -f --forest
+liam.be+ 14825 14620  0 14:17 pts/120  00:00:00  \_ head
+
+
+
+liam.beckman@syccuxas01:~> ps -e -o pid,uname,pcpu,pmem,comm
+  PID USER     %CPU %MEM COMMAND
+    1 root      0.0  0.2 systemd
+    2 root      0.0  0.0 kthreadd
+    3 root      0.0  0.0 ksoftirqd/0
+    5 root      0.0  0.0 kworker/0:0H
+    7 root      0.0  0.0 migration/0
+    8 root      0.0  0.0 rcuc/0
+    9 root      0.0  0.0 rcub/0
+   10 root      0.0  0.0 rcu_preempt
+   11 root      0.0  0.0 rcuop/0
+
+
+liam.beckman@syccuxas01:~> ps -e -o pid,uname=USERNAME,pcpu=CPU_USAGE,pmem,comm 
+
+  PID USERNAME CPU_USAGE %MEM COMMAND
+    1 root           0.0  0.2 systemd
+    2 root           0.0  0.0 kthreadd
+    3 root           0.0  0.0 ksoftirqd/0
+    5 root           0.0  0.0 kworker/0:0H
+    7 root           0.0  0.0 migration/0
+    8 root           0.0  0.0 rcuc/0
+    9 root           0.0  0.0 rcub/0
+   10 root           0.0  0.0 rcu_preempt
+   11 root           0.0  0.0 rcuop/0
+
+
+
+liam.beckman@syccuxas01:~> ps -e- -o pid,comm,etime
+ 
+  PID COMMAND             ELAPSED
+    1 systemd         109-10:18:14
+    2 kthreadd        109-10:18:14
+    3 ksoftirqd/0     109-10:18:14
+    5 kworker/0:0H    109-10:18:14
+    7 migration/0     109-10:18:14
+    8 rcuc/0          109-10:18:14
+    9 rcub/0          109-10:18:14
+   10 rcu_preempt     109-10:18:14
+   11 rcuop/0         109-10:18:14
+
+
+
+
+
+liam.beckman@syccuxas01:~> watch -n 1 'ps -e -o pid, uname,cmd,pmem,pcpu --sort=- 
+pmem,-pcpu | head -a5'5'15'
+
+Every 1.0s: ps -e -o pid,uname,cmd,pmem,pcpu --sort...  Wed Nov  9 14:19:55 2016PID USER     CMD%MEM %CPU
+ 2938 gdmgnome-shell --mode=gdm18.6  0.8
+ 1644 vscan    /usr/sbin/clamd10.0  0.0
+ 1292 root     python /usr/bin/denyhosts.p  2.9  0.7
+ 1694 root     gdm-session-worker [pam/gdm  1.0  0.0742 root     /usr/sbin/rsyslogd -n0.9  0.0
+ 5874 sky.mck+ /usr/bin/emacs-gtk main.cpp  0.4  0.0
+ 1619 root     /usr/lib/accounts-daemon     0.2  0.4284 root     /usr/lib/systemd/systemd-jo  0.2  0.01 root     /sbin/init showopts0.2  0.0
+23061 andrew.+ (sd-pam)0.1  0.0
+ 9291 tanner.+ (sd-pam)0.1  0.0
+25149 sky.mck+ /usr/bin/emacs-gtk main.cpp  0.1  0.0542 chris.m+ vim dlist.cpp0.1  0.0
+ 7246 alex.bi+ vim main.h0.1  0.06
+
+
+liam.beckman@syccuxas01:~> watch -n 1 'ps -e -o pid,uname,cmd,pmem,pcpu --sort=-p
+pmem,-pcpu | head -15'
+Every 1.0s: ps -e -o pid,uname,cmd,pmem,pcpu --sort...  Wed Nov  9 14:20:06 2016PID USER     CMD%MEM %CPU
+ 2938 gdmgnome-shell --mode=gdm18.6  0.8
+ 1644 vscan    /usr/sbin/clamd10.0  0.0
+ 1292 root     python /usr/bin/denyhosts.p  2.9  0.7
+ 1694 root     gdm-session-worker [pam/gdm  1.0  0.0742 root     /usr/sbin/rsyslogd -n0.9  0.0
+14978 aaron.r+ gdb ./main0.6  7.3
+ 5874 sky.mck+ /usr/bin/emacs-gtk main.cpp  0.4  0.0
+ 1619 root     /usr/lib/accounts-daemon     0.2  0.4284 root     /usr/lib/systemd/systemd-jo  0.2  0.01 root     /sbin/init showopts0.2  0.0
+23061 andrew.+ (sd-pam)0.1  0.0
+ 9291 tanner.+ (sd-pam)0.1  0.0
+25149 sky.mck+ /usr/bin/emacs-gtk main.cpp  0.1  0.0542 chris.m+ vim dlist.cpp0.1  0.075.584.393.610012.7243151.968768594
+20
+ 7246 alex.bi+ vim main.h0.1  0.012
+15059 aaron.r+ gdb ./main0.2 21.94 5.75
+15059 aaron.r+ gdb ./main0.6 13.1
+
+
+liam.beckman@syccuxas01:~> logout
