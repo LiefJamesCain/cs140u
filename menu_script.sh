@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #----------------------------------------------------------------------------------------------------------
 # AUTHOR ---------- liam beckman
 # DATE ------------ 26 november 2016 saturday
@@ -7,8 +9,7 @@
 # COMPILED WITH --- GNU bash, version 4.3.46(1)-release (x86_64-pc-linux-gnu)
 #-----------------------------------------------------------------------------------------------------------
 
-#!/bin/bash
-
+response = "a"  #initialize the response variable to a non-"j" value so that the until loop will run 
 clear   #clean the screen
 until [ "$response" = "j" ]     # j or J is the key to exit the program
         do
@@ -49,7 +50,7 @@ until [ "$response" = "j" ]     # j or J is the key to exit the program
 
                 b|B)    #You entered b. print users currently logged in
                     clear
-                    who     #output users information    
+                    who | more    #output users information    
                     echo
                     ;;
 
@@ -81,7 +82,7 @@ until [ "$response" = "j" ]     # j or J is the key to exit the program
 
                 f|F)    #You entered f. print contents of working directory
                     clear
-                    ls | less   #output contents of working directory through less program (q to exit)
+                    ls | more   #output contents of working directory through more program (q to exit)
                     echo
                     ;;
 
@@ -113,7 +114,7 @@ until [ "$response" = "j" ]     # j or J is the key to exit the program
                     read fileName
                     if [ -f "$fileName" ]       #if the file is a normal file...
                         then
-                            less "$fileName"    #...output file through less program (q to exit)
+                            more "$fileName"    #...output file through more program (q to exit)
                     else                        #else, if the file is NOT a normal file...
                         echo "I am unable to find your file. Please reenter filename"
                     fi

@@ -1,0 +1,81 @@
+Welcome to CS140U
+
+This class and all CS courses do contain a lab component that will require the submission of an email to the instructor, or a posting in the discussion board or use the dropbox folder. Do not worry if you see a series of 10 labs in the dropbox, as explained, some labs will be submitted in a different manner and the grades will be kept in my spreadsheet. Some labs may require group participation. For the campus students, the course is labeled in the schedule as CLWEB (classroom meetings with lab component online)
+
+Your labs will count towards 10% of your final grade. The labs are scheduled to be 2-3 hours long but in many cases you will probably finish the activity earlier. The labs will have due dates and once the submission period ends, you will not be able to submit it.
+
+It is understood that a few students may not be able to be present during a lab session due to several reasons. If this is your case, you will need to submit your lab activity prior to the lab meeting. These lab meetings will be announced via email and in the "New material available Announcement" Topic section in the discussion board. Please make sure to ask questions so you do not miss out on the lab activities.
+
+Instructions for Lab 7
+
+This lab has three parts.
+
+These three activities are three little shell programs to create and review, one called svi.sh and the other uon.sh, the other is the command_menu program on page 444. Your job is to explain what certain lines of the shell program do. The last part of this lab is to create the command_menu program. On the first two programs add your comments about what those lines of the code do after the # symbol, describing briefly what that particular piece of code will do in the program.  
+
+These are the two programs. Type them in vi, and replace the ???? with your comments explaining what those lines do in the program. The last command_menu program you will need to create it and run it a few times, make sure to change the ie. “You entered A” with other commands or options.
+
+Part 1
+
+wmorales@syccuxas01:~> cat svi.sh
+
+#!/bin/bash
+# name / date ?????????????????
+# purpose of the program ????????????????
+
+ 
+
+if test $# = 1 # ???
+   then
+if test -f $1 # ???
+
+then
+cp $1 $HOME/keep #???
+vi $1
+else
+echo " file not found.Try again"
+fi
+else
+echo " You must specify a file name.Try again."
+fi
+
+ Place a copy in the assignment dropbox. Before uploading the script svi.sh, make a backup copy, rename it in the linux and call it svi.sh.txt, convert it to DOS format using the command unix2dos, then transfer it to your computer using psftp or filezilla, then upload it
+
+upload this first program with your comments in the lab 7 submission dropbox
+
+--------------
+
+Part 2
+
+For the first two comment lines, your name and date
+
+#!/bin/bash
+# Your Name
+# Date
+
+The lines that contain #... are comments to the program, Replace the ??? with your comments explaining what happens in that line of the program. Submit the program with your name using the following command:
+
+wmorales@syccuxfs01:~> cat uon.sh                  
+
+#!/bin/bash
+#uon.sh: this program will ????????
+until who | grep "$1" > /dev/null #??????????
+
+do sleep 30 #??????????
+
+done
+
+echo "$1 is logged on." exit 0
+
+ Place a copy in the assignment dropbox. Before uploading the script  uon.sh, make a backup copy, rename it in the linux and call it uon.sh.txt, convert it to DOS format using the command unix2dos, then transfer it to your computer using psftp or filezilla, then upload it
+
+upload this second program with your comment in the lab 7 submission dropbox
+
+--------------
+
+Part 3
+
+Create the program on page 444 called command_menu. Run it a few times, change options, etc.
+
+ Place a copy in the assignment dropbox. Before uploading the script  command_menu.sh, make a backup copy, rename it in the linux and call it command_menu.sh.txt, convert it to DOS format using the command unix2dos, then transfer it to your computer using psftp or filezilla, then upload it
+
+Upload it to the lab 7 submission dropbox.

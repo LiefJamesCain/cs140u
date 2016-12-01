@@ -1,0 +1,100 @@
+Instructions for Lab 7
+
+This lab has three parts.
+
+These three activities are three little shell programs to create and review,
+one called svi.sh and the other uon.sh, the other is the command_menu program
+on page 444. Your job is to explain what certain lines of the shell program do.
+The last part of this lab is to create the command_menu program. On the first
+two programs add your comments about what those lines of the code do after the
+symbol, describing briefly what that particular piece of code will do in the
+program.  
+
+These are the two programs. Type them in vi, and replace the ???? with your
+comments explaining what those lines do in the program. The last command_menu
+program you will need to create it and run it a few times, make sure to
+change the ie. “You entered A” with other commands or options.
+
+Part 1
+
+wmorales@syccuxas01:~> cat svi.sh
+
+ #!/bin/bash
+ # liam beckman
+ # 30 november 2016
+ # purpose of the program: To both make a copy of a given file and open it in vi
+
+  
+
+  if test $# = 1 # if the number of arguments is equal to one...
+     then
+     if test -f $1 # ...and if the first argument is a regular file...
+
+     then
+     cp $1 $HOME/keep #...then copy that file to the keep directory in the
+     user's home drectory, and then open it in vi
+     vi $1
+     else
+     echo " file not found.Try again"
+     fi
+     else
+     echo " You must specify a file name.Try again."
+     fi
+
+      Place a copy in the assignment dropbox. Before uploading the script
+      svi.sh, make a backup copy, rename it in the linux and call it
+      svi.sh.txt, convert it to DOS format using the command unix2dos, then
+      transfer it to your computer using psftp or filezilla, then upload it
+
+      upload this first program with your comments in the lab 7 submission
+      dropbox
+
+      --------------
+
+      Part 2
+
+      For the first two comment lines, your name and date
+
+      #!/bin/bash
+      # liam beckman
+      # november 28 2016
+
+      The lines that contain #... are comments to the program, Replace the ???
+      with your comments explaining what happens in that line of the program.
+      Submit the program with your name using the following command:
+
+      wmorales@syccuxfs01:~> cat uon.sh                  
+
+      #!/bin/bash
+      #uon.sh: this program will ????????
+      until who | grep "$1" > /dev/null #until the user (frist argument) is
+      logged into the system
+
+      do sleep 30 #sleep for 30 seconds
+
+      done
+
+      echo "$1 is logged on." exit 0
+
+       Place a copy in the assignment dropbox. Before uploading the script
+       uon.sh, make a backup copy, rename it in the linux and call it
+       uon.sh.txt, convert it to DOS format using the command unix2dos, then
+       transfer it to your computer using psftp or filezilla, then upload it
+
+       upload this second program with your comment in the lab 7 submission
+       dropbox
+
+       --------------
+
+       Part 3
+
+       Create the program on page 444 called command_menu. Run it a few times,
+       change options, etc.
+
+        Place a copy in the assignment dropbox. Before uploading the script
+        command_menu.sh, make a backup copy, rename it in the linux and call
+        it command_menu.sh.txt, convert it to DOS format using the command
+        unix2dos, then transfer it to your computer using psftp or filezilla,
+        then upload it
+
+        Upload it to the lab 7 submission dropbox.
